@@ -16,24 +16,30 @@ export function SiteFooter() {
               Start a project
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-8 text-sm">
+          <div className="grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
             <div className="space-y-3">
-              <p className="font-display text-xs uppercase text-muted-foreground">Social</p>
-              <span className="block text-muted-foreground">Instagram</span>
-              <span className="block text-muted-foreground">TikTok</span>
-              <span className="block text-muted-foreground">LinkedIn</span>
-              <span className="block text-muted-foreground">YouTube</span>
-            </div>
-            <div className="space-y-3">
-              <p className="font-display text-xs uppercase text-muted-foreground">Contact</p>
-              <a href="mailto:hello@astracreative.agency" className="block hover:text-primary">
-                hello@astracreative.agency
-              </a>
-              <span className="block text-muted-foreground">+1 (212) 555-0184</span>
+              <p className="font-display text-xs uppercase text-muted-foreground">New York</p>
               <span className="block text-muted-foreground">
-                88 Wythe Ave, Brooklyn, NY
+                1216 Broadway, New York,
+                <br />
+                NY 10001, United States
               </span>
             </div>
+            <div className="space-y-3">
+              <p className="font-display text-xs uppercase text-muted-foreground">Gibraltar</p>
+              <span className="block text-muted-foreground">
+                The West Wing Montarik House,
+                <br />
+                Suite 4, Second Floor, 3 Bedlam Ct,
+                <br />
+                GX11 1AA, Gibraltar
+              </span>
+            </div>
+          </div>
+          <div className="mt-2 text-sm">
+            <a href="mailto:info@astraagency.co" className="hover:text-primary">
+              info@astraagency.co
+            </a>
           </div>
         </div>
 
