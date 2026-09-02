@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { ClientsSection } from "@/components/clients-section";
+import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
 
 export const Route = createFileRoute("/work")({
   head: () => ({
