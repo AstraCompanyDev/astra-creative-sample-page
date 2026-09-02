@@ -53,7 +53,7 @@ function AboutPage() {
             </h1>
             <div className="mt-10 grid gap-10 lg:grid-cols-2">
               <p className="text-muted-foreground">
-                Astra Creative started in 2016 in a New York walk-up with two people, a ring light
+                Astra Creative started in 2026 in a New York walk-up with two people, a ring light
                 and a spreadsheet of creators. We now run always-on content engines for brands
                 across CPG, healthcare, hospitality and B2B software — with an in-house studio,
                 a 400-creator roster and a media team that treats creative as the variable that

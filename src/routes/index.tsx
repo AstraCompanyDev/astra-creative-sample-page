@@ -7,6 +7,7 @@ import { Marquee } from "@/components/marquee";
 import { ShowcaseSection } from "@/components/showcase-section";
 
 import heroTexture from "@/assets/hero-texture.jpg";
+import heroVideoAsset from "@/assets/hero-video.mp4.asset.json";
 import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
 import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
 import zeeworkCardAsset from "@/assets/zeework-card.jpg.asset.json";
@@ -66,18 +67,20 @@ function Home() {
       <main>
         {/* Hero */}
         <section className="grain relative overflow-hidden">
-          <img
-            src={heroTexture}
-            alt=""
+          <video
+            src={heroVideoAsset.url}
+            poster={heroTexture}
+            autoPlay
+            muted
+            loop
+            playsInline
             aria-hidden="true"
-            width={1920}
-            height={1080}
             className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-45"
           />
           <div className="absolute inset-0 bg-linear-to-b from-background/40 via-background/70 to-background" />
           <div className="relative mx-auto max-w-7xl px-5 pb-24 pt-24 sm:px-8 sm:pb-32 sm:pt-32">
             <p className="rise font-display text-xs uppercase tracking-[0.3em] text-primary">
-              Creator-led social agency · Est. 2016
+              Creator-led social agency · Est. 2026
             </p>
             <h1 className="rise mt-6 text-[clamp(2.75rem,11vw,9rem)]">
               We make brands
