@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { ClientsSection } from "@/components/clients-section";
 import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
 import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
+import zeeworkCardAsset from "@/assets/zeework-card.jpg.asset.json";
 
 export const Route = createFileRoute("/work")({
   head: () => ({
@@ -28,11 +29,12 @@ export const Route = createFileRoute("/work")({
 
 const cases = [
   {
-    brand: "Vymune",
-    kind: "Wellness CPG · Creator-led launch",
+    brand: "ZeeWork",
+    kind: "Workplace · Creator-led brand launch",
     summary:
-      "Built a 60-creator launch cohort and a paid layer on top of the winning cuts. Launch week sold through three months of inventory.",
-    stats: [["$2.4M", "Creator-led revenue"], ["1,180", "Assets shipped"], ["3.6x", "Blended ROAS"]],
+      "A creator-led launch campaign pairing native workplace content with a paid layer on the winning cuts, turning a new platform into the most-talked-about hire of the year.",
+    stats: [["4.2M", "Views in 60 days"], ["+280%", "Signup growth"], ["3.4x", "Blended ROAS"]],
+    image: zeeworkCardAsset.url,
   },
   {
     brand: "U-Topia",
