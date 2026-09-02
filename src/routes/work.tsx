@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { ClientsSection } from "@/components/clients-section";
+import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
 
 export const Route = createFileRoute("/work")({
   head: () => ({
@@ -38,6 +39,7 @@ const cases = [
     summary:
       "Identity, tone and a pre-opening content engine that turned a construction site into the most-anticipated opening in the city.",
     stats: [["Sold out", "Opening week"], ["+340%", "Follower growth"], ["9.2M", "Local reach"]],
+    logo: utopiaLogoAsset.url,
   },
   {
     brand: "ZeeWork",
@@ -94,9 +96,19 @@ function WorkPage() {
                 key={c.brand}
                 className="group flex flex-col rounded-lg border border-border bg-card p-8 transition-colors hover:border-primary"
               >
-                <div
-                  className={`h-44 rounded ${i % 2 === 0 ? "bg-acid" : "bg-electric"} opacity-75 transition-opacity group-hover:opacity-100`}
-                />
+                <div className="flex h-44 items-center justify-center rounded bg-card">
+                  {c.logo ? (
+                    <img
+                      src={c.logo}
+                      alt={`${c.brand} logo`}
+                      className="max-h-24 max-w-[80%] object-contain opacity-90 transition-opacity group-hover:opacity-100"
+                    />
+                  ) : (
+                    <div
+                      className={`h-full w-full rounded ${i % 2 === 0 ? "bg-acid" : "bg-electric"} opacity-75 transition-opacity group-hover:opacity-100`}
+                    />
+                  )}
+                </div>
                 <h2 className="mt-7 text-3xl">{c.brand}</h2>
                 <p className="mt-2 text-xs uppercase tracking-wider text-primary">{c.kind}</p>
                 <p className="mt-4 flex-1 text-sm text-muted-foreground">{c.summary}</p>
