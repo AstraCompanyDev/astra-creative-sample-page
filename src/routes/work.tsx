@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { ClientsSection } from "@/components/clients-section";
 import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
+import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
 
 export const Route = createFileRoute("/work")({
   head: () => ({
@@ -42,11 +43,12 @@ const cases = [
     logo: utopiaLogoAsset.url,
   },
   {
-    brand: "ZeeWork",
-    kind: "Future of work · B2B social",
+    brand: "Moooment",
+    kind: "Mental health · Brand launch",
     summary:
-      "Turned founders and employees into the channel. Executive-led vertical video replaced gated whitepapers as the top pipeline source.",
-    stats: [["4.1x", "Qualified pipeline"], ["-38%", "CAC"], ["18M", "Organic views"]],
+      "Brand identity, creator-led therapist stories and a matched-in-24-hours promise that made therapy feel like part of life, not a hurdle.",
+    stats: [["3,100+", "Licensed clinicians"], ["24 hrs", "Avg. match time"], ["4.8/5", "Member rating"]],
+    image: mooomentCardAsset.url,
   },
   {
     brand: "Miracle Regenerative Center",
@@ -96,8 +98,14 @@ function WorkPage() {
                 key={c.brand}
                 className="group flex flex-col rounded-lg border border-border bg-card p-8 transition-colors hover:border-primary"
               >
-                <div className="flex h-44 items-center justify-center rounded bg-card">
-                  {c.logo ? (
+                <div className="flex h-44 items-center justify-center overflow-hidden rounded bg-card">
+                  {c.image ? (
+                    <img
+                      src={c.image}
+                      alt={`${c.brand} brand visual`}
+                      className="h-full w-full object-cover opacity-90 transition-opacity group-hover:opacity-100"
+                    />
+                  ) : c.logo ? (
                     <img
                       src={c.logo}
                       alt={`${c.brand} logo`}
