@@ -5,7 +5,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { Marquee } from "@/components/marquee";
 import { TalentSection } from "@/components/talent-section";
-import { ClientsSection } from "@/components/clients-section";
+
 import heroTexture from "@/assets/hero-texture.jpg";
 import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
 import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
@@ -205,8 +205,6 @@ function Home() {
             </div>
           </div>
         </section>
-
-        <ClientsSection />
 
         {/* Process teaser */}
         <section className="border-t border-border py-24">
