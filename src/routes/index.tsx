@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { Marquee } from "@/components/marquee";
-import { TalentSection } from "@/components/talent-section";
+import { ShowcaseSection } from "@/components/showcase-section";
 
 import heroTexture from "@/assets/hero-texture.jpg";
 import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
@@ -121,7 +121,7 @@ function Home() {
           ]}
         />
 
-        <TalentSection />
+        <ShowcaseSection />
 
         {/* Services */}
         <section className="border-t border-border py-24" id="services">

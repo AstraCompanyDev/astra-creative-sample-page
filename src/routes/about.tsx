@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import { TalentSection } from "@/components/talent-section";
+import { ShowcaseSection } from "@/components/showcase-section";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -84,7 +84,7 @@ function AboutPage() {
           </div>
         </section>
 
-        <TalentSection />
+        <ShowcaseSection />
 
         <section className="border-t border-border py-20">
           <div className="mx-auto max-w-7xl px-5 sm:px-8">
