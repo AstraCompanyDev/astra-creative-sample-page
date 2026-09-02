@@ -138,33 +138,30 @@ function ContactPage() {
 
             <aside className="space-y-10">
               <div>
-                <h2 className="text-2xl">New business</h2>
+                <h2 className="text-2xl">Get in touch</h2>
                 <a
-                  href="mailto:hello@astracreative.agency"
+                  href="mailto:info@astraagency.co"
                   className="mt-3 block text-primary hover:underline"
                 >
-                  hello@astracreative.agency
+                  info@astraagency.co
                 </a>
-                <p className="text-sm text-muted-foreground">+1 (212) 555-0184</p>
               </div>
               <div>
-                <h2 className="text-2xl">Creators</h2>
-                <a
-                  href="mailto:talent@astracreative.agency"
-                  className="mt-3 block text-primary hover:underline"
-                >
-                  talent@astracreative.agency
-                </a>
-                <p className="text-sm text-muted-foreground">
-                  Join the roster — 400+ creators across 26 markets.
+                <h2 className="text-2xl">New York</h2>
+                <p className="mt-3 text-sm text-muted-foreground">
+                  1216 Broadway, New York,
+                  <br />
+                  NY 10001, United States
                 </p>
               </div>
               <div>
-                <h2 className="text-2xl">Studio</h2>
+                <h2 className="text-2xl">Gibraltar</h2>
                 <p className="mt-3 text-sm text-muted-foreground">
-                  88 Wythe Ave, 4th Floor
+                  The West Wing Montarik House,
                   <br />
-                  Brooklyn, NY 11249
+                  Suite 4, Second Floor, 3 Bedlam Ct,
+                  <br />
+                  GX11 1AA, Gibraltar
                 </p>
               </div>
               <div className="rounded-lg bg-acid p-6">
