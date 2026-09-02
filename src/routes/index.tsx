@@ -206,8 +206,6 @@ function Home() {
           </div>
         </section>
 
-        <ClientsSection />
-
         {/* Process teaser */}
         <section className="border-t border-border py-24">
           <div className="mx-auto max-w-7xl px-5 sm:px-8">
