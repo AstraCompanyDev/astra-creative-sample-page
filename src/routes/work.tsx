@@ -39,6 +39,7 @@ const cases = [
     summary:
       "Identity, tone and a pre-opening content engine that turned a construction site into the most-anticipated opening in the city.",
     stats: [["Sold out", "Opening week"], ["+340%", "Follower growth"], ["9.2M", "Local reach"]],
+    logo: utopiaLogoAsset.url,
   },
   {
     brand: "ZeeWork",
