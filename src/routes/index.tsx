@@ -165,7 +165,7 @@ function Home() {
         </section>
 
         {/* Work teaser */}
-        <section className="border-t border-border bg-card py-24">
+        <section id="work" className="border-t border-border bg-card py-24">
           <div className="mx-auto max-w-7xl px-5 sm:px-8">
             <h2 className="text-4xl sm:text-6xl">
               Selected <span className="text-acid">work</span>
@@ -200,7 +200,7 @@ function Home() {
                   <h3 className="mt-6 text-2xl">{brand}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{kind}</p>
                   <p className="mt-4 font-display text-sm uppercase text-primary">{result}</p>
-                </Link>
+                </div>
               ))}
             </div>
           </div>
