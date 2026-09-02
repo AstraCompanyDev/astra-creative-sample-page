@@ -173,15 +173,21 @@ function Home() {
               {[
                 { brand: "Vymune", kind: "Creator-led product launch", result: "$2.4M in 90 days" },
                 { brand: "U-Topia", kind: "Hospitality brand build", result: "Sold out opening week", logo: utopiaLogoAsset.url },
-                { brand: "ZeeWork", kind: "B2B social system", result: "4.1x qualified pipeline" },
-              ].map(({ brand, kind, result, logo }) => (
+                { brand: "Moooment", kind: "Mental-health brand launch", result: "3,100+ matched clinicians", image: mooomentCardAsset.url },
+              ].map(({ brand, kind, result, logo, image }) => (
                 <Link
                   key={brand}
                   to="/work"
                   className="group rounded-lg border border-border bg-background p-7 transition-colors hover:border-primary"
                 >
-                  <div className="flex h-40 items-center justify-center rounded bg-card">
-                    {logo ? (
+                  <div className="relative flex h-40 items-center justify-center overflow-hidden rounded bg-card">
+                    {image ? (
+                      <img
+                        src={image}
+                        alt={`${brand} brand visual`}
+                        className="h-full w-full object-cover opacity-90 transition-opacity group-hover:opacity-100"
+                      />
+                    ) : logo ? (
                       <img
                         src={logo}
                         alt={`${brand} logo`}
