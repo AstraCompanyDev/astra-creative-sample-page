@@ -16,22 +16,7 @@ export function SiteFooter() {
               Start a project
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-8 text-sm sm:grid-cols-3">
-            <div className="space-y-3">
-              <p className="font-display text-xs uppercase text-muted-foreground">Studio</p>
-              <Link to="/services" className="block hover:text-primary">
-                Services
-              </Link>
-              <Link to="/work" className="block hover:text-primary">
-                Work
-              </Link>
-              <Link to="/process" className="block hover:text-primary">
-                Process
-              </Link>
-              <Link to="/about" className="block hover:text-primary">
-                About
-              </Link>
-            </div>
+          <div className="grid grid-cols-2 gap-8 text-sm">
             <div className="space-y-3">
               <p className="font-display text-xs uppercase text-muted-foreground">Social</p>
               <span className="block text-muted-foreground">Instagram</span>

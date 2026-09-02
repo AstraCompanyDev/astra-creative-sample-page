@@ -99,12 +99,12 @@ function Home() {
                 >
                   Start a project <ArrowUpRight className="size-4" />
                 </Link>
-                <Link
-                  to="/work"
+                <a
+                  href="#work"
                   className="inline-flex items-center gap-2 rounded-full border border-border px-7 py-3.5 font-display text-sm uppercase transition-colors hover:border-primary hover:text-primary"
                 >
                   See the work
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -138,10 +138,10 @@ function Home() {
                 </h2>
               </div>
               <Link
-                to="/services"
+                to="/contact"
                 className="inline-flex items-center gap-2 font-display text-sm uppercase text-primary hover:underline"
               >
-                Full service list <ArrowUpRight className="size-4" />
+                Talk to us <ArrowUpRight className="size-4" />
               </Link>
             </div>
 
@@ -165,7 +165,7 @@ function Home() {
         </section>
 
         {/* Work teaser */}
-        <section className="border-t border-border bg-card py-24">
+        <section id="work" className="border-t border-border bg-card py-24">
           <div className="mx-auto max-w-7xl px-5 sm:px-8">
             <h2 className="text-4xl sm:text-6xl">
               Selected <span className="text-acid">work</span>
@@ -176,9 +176,8 @@ function Home() {
                 { brand: "U-Topia", kind: "Hospitality brand build", result: "Sold out opening week", logo: utopiaLogoAsset.url },
                 { brand: "Moooment", kind: "Mental-health brand launch", result: "3,100+ matched clinicians", image: mooomentCardAsset.url },
               ].map(({ brand, kind, result, logo, image }) => (
-                <Link
+                <div
                   key={brand}
-                  to="/work"
                   className="group rounded-lg border border-border bg-background p-7 transition-colors hover:border-primary"
                 >
                   <div className="relative flex h-40 items-center justify-center overflow-hidden rounded bg-card">
@@ -201,7 +200,7 @@ function Home() {
                   <h3 className="mt-6 text-2xl">{brand}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{kind}</p>
                   <p className="mt-4 font-display text-sm uppercase text-primary">{result}</p>
-                </Link>
+                </div>
               ))}
             </div>
           </div>
@@ -223,10 +222,10 @@ function Home() {
                   for <span className="text-acid">speed</span>
                 </h2>
                 <Link
-                  to="/process"
+                  to="/contact"
                   className="mt-8 inline-flex items-center gap-2 font-display text-sm uppercase text-primary hover:underline"
                 >
-                  See the full process <ArrowUpRight className="size-4" />
+                  Start a project <ArrowUpRight className="size-4" />
                 </Link>
               </div>
               <ol className="space-y-px overflow-hidden rounded-lg border border-border bg-border">

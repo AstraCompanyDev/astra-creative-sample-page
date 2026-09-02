@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -101,27 +101,6 @@ function ServicesPage() {
           </div>
         </section>
 
-        <section className="border-t border-border bg-card py-20">
-          <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-3">
-            {[
-              ["Sprint", "$18k / mo", "One capability, 90-day commitment, single squad."],
-              ["Engine", "$42k / mo", "UGC + paid + social run as one always-on system."],
-              ["Partner", "Custom", "Embedded team, quarterly planning, full brand ownership."],
-            ].map(([tier, price, copy]) => (
-              <div key={tier} className="rounded-lg border border-border bg-background p-8">
-                <h3 className="text-2xl">{tier}</h3>
-                <p className="mt-3 font-display text-3xl text-primary">{price}</p>
-                <p className="mt-4 text-sm text-muted-foreground">{copy}</p>
-                <Link
-                  to="/contact"
-                  className="mt-7 inline-flex rounded-full border border-border px-5 py-2.5 font-display text-xs uppercase hover:border-primary hover:text-primary"
-                >
-                  Enquire
-                </Link>
-              </div>
-            ))}
-          </div>
-        </section>
       </main>
       <SiteFooter />
     </div>
