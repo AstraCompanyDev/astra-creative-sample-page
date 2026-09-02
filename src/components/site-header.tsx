@@ -2,12 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-const nav = [
-  { to: "/services", label: "Services" },
-  { to: "/work", label: "Work" },
-  { to: "/process", label: "Process" },
-  { to: "/about", label: "About" },
-] as const;
+const nav: ReadonlyArray<{ to: "/contact"; label: string }> = [];
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
