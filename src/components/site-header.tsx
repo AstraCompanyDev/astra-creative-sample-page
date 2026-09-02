@@ -17,7 +17,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
         <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
           <span className="h-3 w-3 rounded-full bg-acid" />
-          <span className="font-display text-lg tracking-tight uppercase">Hyperloop</span>
+          <span className="font-display text-lg tracking-tight uppercase">Astra Creative</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

@@ -77,13 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Hyperloop — Creator-Led Social & Brand Agency" },
+      { title: "Astra Creative — Creator-Led Social & Brand Agency" },
       {
         name: "description",
         content:
-          "Hyperloop is a creator-led social agency building attention engines for ambitious brands.",
+          "Astra Creative is a creator-led social agency building attention engines for ambitious brands.",
       },
-      { name: "author", content: "Hyperloop Creative Co." },
+      { name: "author", content: "Astra Creative Co." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

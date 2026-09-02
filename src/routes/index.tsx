@@ -13,13 +13,13 @@ import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hyperloop — Creator-Led Social & Brand Agency" },
+      { title: "Astra Creative — Creator-Led Social & Brand Agency" },
       {
         name: "description",
         content:
-          "Hyperloop is a creator-led social agency building attention engines: UGC at scale, brand strategy, paid social and content production for ambitious brands.",
+          "Astra Creative is a creator-led social agency building attention engines: UGC at scale, brand strategy, paid social and content production for ambitious brands.",
       },
-      { property: "og:title", content: "Hyperloop — Creator-Led Social & Brand Agency" },
+      { property: "og:title", content: "Astra Creative — Creator-Led Social & Brand Agency" },
       {
         property: "og:description",
         content:
@@ -87,7 +87,7 @@ function Home() {
             </h1>
             <div className="mt-10 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
               <p className="max-w-xl text-base text-muted-foreground sm:text-lg">
-                Hyperloop is a full-stack social and content studio. We pair sharp brand
+                Astra Creative is a full-stack social and content studio. We pair sharp brand
                 strategy with a 400-creator UGC network to build attention engines that
                 actually sell — not campaigns that just look nice in a deck.
               </p>

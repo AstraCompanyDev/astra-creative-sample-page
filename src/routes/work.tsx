@@ -9,11 +9,11 @@ import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
 export const Route = createFileRoute("/work")({
   head: () => ({
     meta: [
-      { title: "Work — Creator Campaigns & Brand Launches | Hyperloop" },
+      { title: "Work — Creator Campaigns & Brand Launches | Astra Creative" },
       {
         name: "description",
         content:
-          "Case studies from Hyperloop: creator-led launches, B2B social systems and healthcare brand builds with measurable revenue impact.",
+          "Case studies from Astra Creative: creator-led launches, B2B social systems and healthcare brand builds with measurable revenue impact.",
       },
       { property: "og:title", content: "Work — Creator Campaigns & Brand Launches" },
       {

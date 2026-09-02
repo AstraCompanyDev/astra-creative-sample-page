@@ -7,11 +7,11 @@ import { SiteFooter } from "@/components/site-footer";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Start a Project | Hyperloop" },
+      { title: "Contact — Start a Project | Astra Creative" },
       {
         name: "description",
         content:
-          "Tell Hyperloop about your brand and goals. New business enquiries answered within one business day from our Brooklyn studio.",
+          "Tell Astra Creative about your brand and goals. New business enquiries answered within one business day from our Brooklyn studio.",
       },
       { property: "og:title", content: "Contact — Start a Project" },
       {
@@ -140,20 +140,20 @@ function ContactPage() {
               <div>
                 <h2 className="text-2xl">New business</h2>
                 <a
-                  href="mailto:hello@hyperloop.agency"
+                  href="mailto:hello@astracreative.agency"
                   className="mt-3 block text-primary hover:underline"
                 >
-                  hello@hyperloop.agency
+                  hello@astracreative.agency
                 </a>
                 <p className="text-sm text-muted-foreground">+1 (212) 555-0184</p>
               </div>
               <div>
                 <h2 className="text-2xl">Creators</h2>
                 <a
-                  href="mailto:talent@hyperloop.agency"
+                  href="mailto:talent@astracreative.agency"
                   className="mt-3 block text-primary hover:underline"
                 >
-                  talent@hyperloop.agency
+                  talent@astracreative.agency
                 </a>
                 <p className="text-sm text-muted-foreground">
                   Join the roster — 400+ creators across 26 markets.
