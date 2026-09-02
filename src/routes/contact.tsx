@@ -11,7 +11,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Tell Astra Creative about your brand and goals. New business enquiries answered within one business day from our Brooklyn studio.",
+          "Tell Astra Creative about your brand and goals. New business enquiries answered within one business day from our New York studio.",
       },
       { property: "og:title", content: "Contact — Start a Project" },
       {
