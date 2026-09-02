@@ -99,12 +99,12 @@ function Home() {
                 >
                   Start a project <ArrowUpRight className="size-4" />
                 </Link>
-                <Link
-                  to="/work"
+                <a
+                  href="#work"
                   className="inline-flex items-center gap-2 rounded-full border border-border px-7 py-3.5 font-display text-sm uppercase transition-colors hover:border-primary hover:text-primary"
                 >
                   See the work
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -138,10 +138,10 @@ function Home() {
                 </h2>
               </div>
               <Link
-                to="/services"
+                to="/contact"
                 className="inline-flex items-center gap-2 font-display text-sm uppercase text-primary hover:underline"
               >
-                Full service list <ArrowUpRight className="size-4" />
+                Talk to us <ArrowUpRight className="size-4" />
               </Link>
             </div>
 
@@ -176,9 +176,8 @@ function Home() {
                 { brand: "U-Topia", kind: "Hospitality brand build", result: "Sold out opening week", logo: utopiaLogoAsset.url },
                 { brand: "Moooment", kind: "Mental-health brand launch", result: "3,100+ matched clinicians", image: mooomentCardAsset.url },
               ].map(({ brand, kind, result, logo, image }) => (
-                <Link
+                <div
                   key={brand}
-                  to="/work"
                   className="group rounded-lg border border-border bg-background p-7 transition-colors hover:border-primary"
                 >
                   <div className="relative flex h-40 items-center justify-center overflow-hidden rounded bg-card">
@@ -223,10 +222,10 @@ function Home() {
                   for <span className="text-acid">speed</span>
                 </h2>
                 <Link
-                  to="/process"
+                  to="/contact"
                   className="mt-8 inline-flex items-center gap-2 font-display text-sm uppercase text-primary hover:underline"
                 >
-                  See the full process <ArrowUpRight className="size-4" />
+                  Start a project <ArrowUpRight className="size-4" />
                 </Link>
               </div>
               <ol className="space-y-px overflow-hidden rounded-lg border border-border bg-border">
