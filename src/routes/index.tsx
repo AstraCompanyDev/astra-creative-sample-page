@@ -9,6 +9,7 @@ import { ClientsSection } from "@/components/clients-section";
 import heroTexture from "@/assets/hero-texture.jpg";
 import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
 import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
+import zeeworkCardAsset from "@/assets/zeework-card.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -171,7 +172,7 @@ function Home() {
             </h2>
             <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
               {[
-                { brand: "Vymune", kind: "Creator-led product launch", result: "$2.4M in 90 days" },
+                { brand: "ZeeWork", kind: "Creator-led brand launch", result: "4.2M views in 60 days", image: zeeworkCardAsset.url },
                 { brand: "U-Topia", kind: "Hospitality brand build", result: "Sold out opening week", logo: utopiaLogoAsset.url },
                 { brand: "Moooment", kind: "Mental-health brand launch", result: "3,100+ matched clinicians", image: mooomentCardAsset.url },
               ].map(({ brand, kind, result, logo, image }) => (
