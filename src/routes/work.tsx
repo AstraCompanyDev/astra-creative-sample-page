@@ -98,8 +98,14 @@ function WorkPage() {
                 key={c.brand}
                 className="group flex flex-col rounded-lg border border-border bg-card p-8 transition-colors hover:border-primary"
               >
-                <div className="flex h-44 items-center justify-center rounded bg-card">
-                  {c.logo ? (
+                <div className="flex h-44 items-center justify-center overflow-hidden rounded bg-card">
+                  {c.image ? (
+                    <img
+                      src={c.image}
+                      alt={`${c.brand} brand visual`}
+                      className="h-full w-full object-cover opacity-90 transition-opacity group-hover:opacity-100"
+                    />
+                  ) : c.logo ? (
                     <img
                       src={c.logo}
                       alt={`${c.brand} logo`}
