@@ -170,16 +170,26 @@ function Home() {
             </h2>
             <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
               {[
-                ["Vymune", "Creator-led product launch", "$2.4M in 90 days"],
-                ["U-Topia", "Hospitality brand build", "Sold out opening week"],
-                ["ZeeWork", "B2B social system", "4.1x qualified pipeline"],
-              ].map(([brand, kind, result]) => (
+                { brand: "Vymune", kind: "Creator-led product launch", result: "$2.4M in 90 days" },
+                { brand: "U-Topia", kind: "Hospitality brand build", result: "Sold out opening week", logo: utopiaLogoAsset.url },
+                { brand: "ZeeWork", kind: "B2B social system", result: "4.1x qualified pipeline" },
+              ].map(({ brand, kind, result, logo }) => (
                 <Link
                   key={brand}
                   to="/work"
                   className="group rounded-lg border border-border bg-background p-7 transition-colors hover:border-primary"
                 >
-                  <div className="h-40 rounded bg-acid opacity-80 transition-opacity group-hover:opacity-100" />
+                  <div className="flex h-40 items-center justify-center rounded bg-card">
+                    {logo ? (
+                      <img
+                        src={logo}
+                        alt={`${brand} logo`}
+                        className="max-h-24 max-w-[80%] object-contain opacity-90 transition-opacity group-hover:opacity-100"
+                      />
+                    ) : (
+                      <div className="h-full w-full rounded bg-acid opacity-80 transition-opacity group-hover:opacity-100" />
+                    )}
+                  </div>
                   <h3 className="mt-6 text-2xl">{brand}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{kind}</p>
                   <p className="mt-4 font-display text-sm uppercase text-primary">{result}</p>
