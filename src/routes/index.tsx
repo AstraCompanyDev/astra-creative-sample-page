@@ -7,6 +7,7 @@ import { Marquee } from "@/components/marquee";
 import { ShowcaseSection } from "@/components/showcase-section";
 
 import heroTexture from "@/assets/hero-texture.jpg";
+import heroVideoAsset from "@/assets/hero-video.mp4.asset.json";
 import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
 import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
 import zeeworkCardAsset from "@/assets/zeework-card.jpg.asset.json";
