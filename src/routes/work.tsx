@@ -43,11 +43,12 @@ const cases = [
     logo: utopiaLogoAsset.url,
   },
   {
-    brand: "ZeeWork",
-    kind: "Future of work · B2B social",
+    brand: "Moooment",
+    kind: "Mental health · Brand launch",
     summary:
-      "Turned founders and employees into the channel. Executive-led vertical video replaced gated whitepapers as the top pipeline source.",
-    stats: [["4.1x", "Qualified pipeline"], ["-38%", "CAC"], ["18M", "Organic views"]],
+      "Brand identity, creator-led therapist stories and a matched-in-24-hours promise that made therapy feel like part of life, not a hurdle.",
+    stats: [["3,100+", "Licensed clinicians"], ["24 hrs", "Avg. match time"], ["4.8/5", "Member rating"]],
+    image: mooomentCardAsset.url,
   },
   {
     brand: "Miracle Regenerative Center",
