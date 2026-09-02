@@ -58,7 +58,6 @@ export function ExitIntentPopup() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogContent
-        showCloseButton
         className="max-w-lg overflow-hidden border-border bg-card p-0"
       >
         <div className="h-1.5 w-full bg-linear-to-r from-primary to-accent" />
