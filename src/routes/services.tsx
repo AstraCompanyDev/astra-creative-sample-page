@@ -7,11 +7,11 @@ import { Marquee } from "@/components/marquee";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — UGC, Paid Social & Brand Strategy | Hyperloop" },
+      { title: "Services — UGC, Paid Social & Brand Strategy | Astra Creative" },
       {
         name: "description",
         content:
-          "Brand strategy, UGC production at scale, social management, paid social, content production and influencer partnerships from Hyperloop.",
+          "Brand strategy, UGC production at scale, social management, paid social, content production and influencer partnerships from Astra Creative.",
       },
       { property: "og:title", content: "Services — UGC, Paid Social & Brand Strategy" },
       {

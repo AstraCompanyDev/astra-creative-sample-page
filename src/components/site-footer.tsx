@@ -41,8 +41,8 @@ export function SiteFooter() {
             </div>
             <div className="space-y-3">
               <p className="font-display text-xs uppercase text-muted-foreground">Contact</p>
-              <a href="mailto:hello@hyperloop.agency" className="block hover:text-primary">
-                hello@hyperloop.agency
+              <a href="mailto:hello@astracreative.agency" className="block hover:text-primary">
+                hello@astracreative.agency
               </a>
               <span className="block text-muted-foreground">+1 (212) 555-0184</span>
               <span className="block text-muted-foreground">
@@ -53,7 +53,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-14 flex flex-col gap-2 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:justify-between">
-          <p>© {new Date().getFullYear()} Hyperloop Creative Co. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Astra Creative Co. All rights reserved.</p>
           <p>Built for brands that refuse to blend in.</p>
         </div>
       </div>

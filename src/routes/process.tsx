@@ -7,11 +7,11 @@ import { Marquee } from "@/components/marquee";
 export const Route = createFileRoute("/process")({
   head: () => ({
     meta: [
-      { title: "Process — From Brief to First Cut in 72 Hours | Hyperloop" },
+      { title: "Process — From Brief to First Cut in 72 Hours | Astra Creative" },
       {
         name: "description",
         content:
-          "How Hyperloop works: immerse, frame, produce, amplify and compound — a four-phase creator-led process built for speed and measurable results.",
+          "How Astra Creative works: immerse, frame, produce, amplify and compound — a four-phase creator-led process built for speed and measurable results.",
       },
       { property: "og:title", content: "Process — From Brief to First Cut in 72 Hours" },
       {
