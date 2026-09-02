@@ -7,6 +7,7 @@ import { Marquee } from "@/components/marquee";
 import { TalentSection } from "@/components/talent-section";
 import { ClientsSection } from "@/components/clients-section";
 import heroTexture from "@/assets/hero-texture.jpg";
+import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
