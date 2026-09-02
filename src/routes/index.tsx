@@ -171,7 +171,7 @@ function Home() {
         <section id="work" className="border-t border-border bg-card py-24">
           <div className="mx-auto max-w-7xl px-5 sm:px-8">
             <h2 className="text-4xl sm:text-6xl">
-              Selected <span className="text-acid">work</span>
+              Building <span className="text-acid">Global Brands</span>
             </h2>
             <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
               {[
