@@ -75,9 +75,9 @@ function Home() {
             loop
             playsInline
             aria-hidden="true"
-            className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-45"
+            className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-75"
           />
-          <div className="absolute inset-0 bg-linear-to-b from-background/40 via-background/70 to-background" />
+          <div className="absolute inset-0 bg-linear-to-b from-background/10 via-background/40 to-background" />
           <div className="relative mx-auto max-w-7xl px-5 pb-24 pt-24 sm:px-8 sm:pb-32 sm:pt-32">
             <p className="rise font-display text-xs uppercase tracking-[0.3em] text-primary">
               Creator-led social agency · Est. 2026
