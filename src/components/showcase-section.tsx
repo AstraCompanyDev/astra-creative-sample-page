@@ -45,7 +45,7 @@ const showcase = [
     blurb: "Senior counsel for in-house teams: audits, playbooks and operating models that stick.",
   },
   {
-    video: showcase6.url,
+    video: showcase8.url,
     poster: creator2,
     title: "Commerce",
     blurb: "Shoppable content and storefront creative engineered to convert attention into revenue.",
@@ -57,7 +57,7 @@ const showcase = [
     blurb: "Casting, deals and whitelisting from a 400-creator roster — partnerships that actually perform.",
   },
   {
-    video: showcase8.url,
+    video: showcase6.url,
     poster: creator4,
     title: "Analytics",
     blurb: "Incrementality reporting and creative testing frameworks that prove what moved the number.",
