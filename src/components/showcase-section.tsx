@@ -2,6 +2,10 @@ import showcase1 from "@/assets/showcase-1.mp4.asset.json";
 import showcase2 from "@/assets/showcase-2.mp4.asset.json";
 import showcase3 from "@/assets/showcase-3.mp4.asset.json";
 import showcase4 from "@/assets/showcase-4.mp4.asset.json";
+import showcase5 from "@/assets/showcase-5.mp4.asset.json";
+import showcase6 from "@/assets/showcase-6.mp4.asset.json";
+import showcase7 from "@/assets/showcase-7.mp4.asset.json";
+import showcase8 from "@/assets/showcase-8.mp4.asset.json";
 import creator1 from "@/assets/creator-1.jpg";
 import creator2 from "@/assets/creator-2.jpg";
 import creator3 from "@/assets/creator-3.jpg";
@@ -11,34 +15,50 @@ const showcase = [
   {
     video: showcase1.url,
     poster: creator1,
-    title: "Glow Ritual",
-    client: "Beauty / DTC",
-    blurb: "Creator-led hook test, 12 variants shipped in a week.",
-    stat: "4.1M views",
+    title: "Creative",
+    blurb: "Scroll-stopping concepts, design systems and ad creative built to travel across every feed.",
   },
   {
     video: showcase2.url,
     poster: creator2,
-    title: "Drop Season",
-    client: "Streetwear",
-    blurb: "Launch teaser cut for TikTok, Reels and Shorts.",
-    stat: "+212% CTR",
+    title: "Media",
+    blurb: "Creative-first media buying across Meta, TikTok, YouTube and beyond — scaled weekly on winners.",
   },
   {
     video: showcase3.url,
     poster: creator3,
-    title: "Daily Reset",
-    client: "Wellness App",
-    blurb: "UGC testimonial series driving trial signups.",
-    stat: "2.8x ROAS",
+    title: "Strategy",
+    blurb: "Positioning, narrative and go-to-market thinking that gives every asset a reason to exist.",
   },
   {
     video: showcase4.url,
     poster: creator4,
-    title: "Founder Mode",
-    client: "B2B SaaS",
-    blurb: "Talking-head ad framework built for paid social.",
-    stat: "-38% CPA",
+    title: "Integrated",
+    blurb: "One team across brand, social, paid and production — no handoffs, no diluted ideas.",
+  },
+  {
+    video: showcase5.url,
+    poster: creator1,
+    title: "Consulting",
+    blurb: "Senior counsel for in-house teams: audits, playbooks and operating models that stick.",
+  },
+  {
+    video: showcase6.url,
+    poster: creator2,
+    title: "Commerce",
+    blurb: "Shoppable content and storefront creative engineered to convert attention into revenue.",
+  },
+  {
+    video: showcase7.url,
+    poster: creator3,
+    title: "Influencer & Talent",
+    blurb: "Casting, deals and whitelisting from a 400-creator roster — partnerships that actually perform.",
+  },
+  {
+    video: showcase8.url,
+    poster: creator4,
+    title: "Analytics",
+    blurb: "Incrementality reporting and creative testing frameworks that prove what moved the number.",
   },
 ];
 
@@ -52,14 +72,14 @@ export function ShowcaseSection() {
               Showcase of work
             </p>
             <h2 className="mt-4 text-4xl sm:text-7xl">
-              Content that
+              Every discipline.
               <br />
-              <span className="text-acid">performs.</span>
+              <span className="text-acid">One team.</span>
             </h2>
           </div>
           <p className="max-w-sm text-sm text-muted-foreground">
-            A snapshot of recent creator-led work — cast, briefed, shot and edited in-house,
-            then tested until the numbers move.
+            Eight capabilities, one studio — cast, briefed, shot and edited in-house, then
+            tested until the numbers move.
           </p>
         </div>
 
@@ -75,16 +95,12 @@ export function ShowcaseSection() {
                   loop
                   playsInline
                   preload="metadata"
-                  aria-label={`${item.title} for ${item.client}`}
+                  aria-label={`${item.title} showcase video`}
                   className="aspect-4/5 w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <span className="absolute left-3 top-3 rounded-full bg-primary px-2.5 py-1 font-display text-[10px] uppercase text-primary-foreground">
-                  {item.stat}
-                </span>
               </div>
               <div className="mt-4">
                 <p className="font-display text-base uppercase">{item.title}</p>
-                <p className="text-xs uppercase tracking-widest text-primary">{item.client}</p>
                 <p className="mt-2 text-sm text-muted-foreground">{item.blurb}</p>
               </div>
             </article>
