@@ -51,7 +51,7 @@ const showcase = [
     blurb: "Shoppable content and storefront creative engineered to convert attention into revenue.",
   },
   {
-    video: showcase7.url,
+    video: showcaseTalent.url,
     poster: creator3,
     title: "Influencer & Talent",
     blurb: "Casting, deals and whitelisting from a 400-creator roster — partnerships that actually perform.",
