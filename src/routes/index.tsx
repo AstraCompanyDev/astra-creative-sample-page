@@ -138,10 +138,11 @@ function Home() {
             <WorkCarousel
               cards={[
                 { brand: "ZeeWork", kind: "Creator-led brand launch", result: "4.2M views in 60 days", image: zeeworkCardAsset.url },
-                { brand: "U-Topia", kind: "Hospitality brand build", result: "Sold out opening week", logo: utopiaLogoAsset.url },
-                { brand: "Moooment", kind: "Mental-health brand launch", result: "3,100+ matched clinicians", image: mooomentCardAsset.url },
-                { brand: "CoFoundersLab", kind: "Marketplace brand system", result: "2x founder signups" },
+                { brand: "U-Topia", kind: "Fintech brand build", result: "Building a leading global fintech that reached 5,000 pre-launch users", logo: utopiaLogoAsset.url },
+                { brand: "Moooment", kind: "Application suite", result: "Building their whole application suite to help provide therapy to those in need", image: mooomentCardAsset.url },
+                { brand: "CoFoundersLab", kind: "Platform growth", result: "Helping the site reach over 800,000 users on platform" },
               ] as BrandCard[]}
+
             />
           </div>
         </section>

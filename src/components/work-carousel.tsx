@@ -37,7 +37,7 @@ function Card({ card }: { card: BrandCard }) {
       <div className="flex flex-col justify-center p-7">
         <h3 className="text-2xl">{card.brand}</h3>
         <p className="mt-2 text-sm text-muted-foreground">{card.kind}</p>
-        <p className="mt-4 font-display text-sm uppercase text-primary">{card.result}</p>
+        <p className="mt-4 text-sm leading-snug text-primary">{card.result}</p>
       </div>
     </div>
   );
