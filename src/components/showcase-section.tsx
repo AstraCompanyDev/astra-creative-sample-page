@@ -26,7 +26,7 @@ const showcase = [
     blurb: "Creative-first media buying across Meta, TikTok, YouTube and beyond — scaled weekly on winners.",
   },
   {
-    video: showcase3.url,
+    video: showcaseStrategy.url,
     poster: creator3,
     title: "Strategy",
     blurb: "Positioning, narrative and go-to-market thinking that gives every asset a reason to exist.",
