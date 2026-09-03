@@ -127,45 +127,26 @@ function Home() {
 
         <ShowcaseSection />
 
-        {/* Work teaser */}
+        {/* Work carousel */}
         <section id="work" className="border-t border-border bg-card py-24">
           <div className="mx-auto max-w-7xl px-5 sm:px-8">
             <h2 className="text-4xl sm:text-6xl">
               Building <span className="text-acid">Global Brands</span>
             </h2>
-            <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
-              {[
+          </div>
+          <div className="mt-12">
+            <WorkCarousel
+              cards={[
                 { brand: "ZeeWork", kind: "Creator-led brand launch", result: "4.2M views in 60 days", image: zeeworkCardAsset.url },
                 { brand: "U-Topia", kind: "Hospitality brand build", result: "Sold out opening week", logo: utopiaLogoAsset.url },
                 { brand: "Moooment", kind: "Mental-health brand launch", result: "3,100+ matched clinicians", image: mooomentCardAsset.url },
-              ].map(({ brand, kind, result, logo, image }) => (
-                <div
-                  key={brand}
-                  className="group rounded-lg border border-border bg-background p-7 transition-colors hover:border-primary"
-                >
-                  <div className="relative flex h-40 items-center justify-center overflow-hidden rounded bg-card">
-                    {image ? (
-                      <img
-                        src={image}
-                        alt={`${brand} brand visual`}
-                        className="h-full w-full object-cover opacity-90 transition-opacity group-hover:opacity-100"
-                      />
-                    ) : logo ? (
-                      <img
-                        src={logo}
-                        alt={`${brand} logo`}
-                        className="max-h-24 max-w-[80%] object-contain opacity-90 transition-opacity group-hover:opacity-100"
-                      />
-                    ) : (
-                      <div className="h-full w-full rounded bg-acid opacity-80 transition-opacity group-hover:opacity-100" />
-                    )}
-                  </div>
-                  <h3 className="mt-6 text-2xl">{brand}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{kind}</p>
-                  <p className="mt-4 font-display text-sm uppercase text-primary">{result}</p>
-                </div>
-              ))}
-            </div>
+                { brand: "CoFoundersLab", kind: "Marketplace brand system", result: "2x founder signups" },
+                { brand: "UpFounder", kind: "Startup platform launch", result: "40k waitlist in 90 days" },
+                { brand: "Miracle Regenerative Center", kind: "Healthcare brand build", result: "Fully booked Q1" },
+                { brand: "Astra Healthcare", kind: "Clinic brand & content", result: "+210% patient leads" },
+                { brand: "Vymune", kind: "Biotech brand launch", result: "Series A closed" },
+              ] as BrandCard[]}
+            />
           </div>
         </section>
 
