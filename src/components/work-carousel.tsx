@@ -10,8 +10,9 @@ export type BrandCard = {
 
 function Card({ card }: { card: BrandCard }) {
   return (
-    <div className="group w-[300px] shrink-0 rounded-lg border border-border bg-background p-7 transition-colors hover:border-primary sm:w-[340px]">
-      <div className="relative flex h-40 items-center justify-center overflow-hidden rounded bg-card">
+    <div className="group flex w-[460px] shrink-0 overflow-hidden rounded-lg border border-border bg-background transition-colors hover:border-primary sm:w-[520px]">
+      {/* Image / logo on the left */}
+      <div className="relative flex w-[44%] shrink-0 items-center justify-center overflow-hidden bg-card">
         {card.image ? (
           <img
             src={card.image}
@@ -25,16 +26,19 @@ function Card({ card }: { card: BrandCard }) {
             className="max-h-24 max-w-[80%] object-contain opacity-90 transition-opacity group-hover:opacity-100"
           />
         ) : (
-          <div className="flex h-full w-full items-center justify-center rounded bg-acid opacity-80 transition-opacity group-hover:opacity-100">
+          <div className="flex h-full w-full items-center justify-center bg-acid opacity-80 transition-opacity group-hover:opacity-100">
             <span className="font-display text-2xl text-acid-foreground">
               {card.brand}
             </span>
           </div>
         )}
       </div>
-      <h3 className="mt-6 text-2xl">{card.brand}</h3>
-      <p className="mt-2 text-sm text-muted-foreground">{card.kind}</p>
-      <p className="mt-4 font-display text-sm uppercase text-primary">{card.result}</p>
+      {/* Text on the right */}
+      <div className="flex flex-col justify-center p-7">
+        <h3 className="text-2xl">{card.brand}</h3>
+        <p className="mt-2 text-sm text-muted-foreground">{card.kind}</p>
+        <p className="mt-4 font-display text-sm uppercase text-primary">{card.result}</p>
+      </div>
     </div>
   );
 }
