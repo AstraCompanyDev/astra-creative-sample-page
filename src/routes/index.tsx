@@ -137,7 +137,7 @@ function Home() {
           <div className="mt-12">
             <WorkCarousel
               cards={[
-                { brand: "ZeeWork", kind: "Creator-led brand launch", result: "4.2M views in 60 days", image: zeeworkCardAsset.url },
+                { brand: "ZeeWork", kind: "Marketplace launch", result: "Building a global marketplace for freelancers that reached $10,000 in revenue in the first 30 days", image: zeeworkCardAsset.url },
                 { brand: "U-Topia", kind: "Fintech brand build", result: "Building a leading global fintech that reached 5,000 pre-launch users", logo: utopiaLogoAsset.url },
                 { brand: "Moooment", kind: "Application suite", result: "Building their whole application suite to help provide therapy to those in need", image: mooomentCardAsset.url },
                 { brand: "CoFoundersLab", kind: "Platform growth", result: "Helping the site reach over 800,000 users on platform" },
