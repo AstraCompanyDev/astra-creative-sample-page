@@ -106,20 +106,6 @@ export function ShowcaseSection() {
             </article>
           ))}
         </div>
-
-        <div className="mt-12 grid grid-cols-2 gap-6 border-t border-border pt-10 sm:grid-cols-4">
-          {[
-            ["400+", "Creators on roster"],
-            ["26", "Markets covered"],
-            ["12K+", "Assets shipped / yr"],
-            ["72h", "Brief to first cut"],
-          ].map(([stat, label]) => (
-            <div key={label}>
-              <p className="font-display text-3xl text-primary sm:text-5xl">{stat}</p>
-              <p className="mt-2 text-xs text-muted-foreground uppercase">{label}</p>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
