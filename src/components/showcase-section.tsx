@@ -8,6 +8,7 @@ import showcase6 from "@/assets/showcase-6.mp4.asset.json";
 import showcase7 from "@/assets/showcase-7.mp4.asset.json";
 import showcase8 from "@/assets/showcase-8.mp4.asset.json";
 import showcaseTalent from "@/assets/showcase-talent.mp4.asset.json";
+import showcaseCommerce from "@/assets/showcase-commerce.mp4.asset.json";
 import creator1 from "@/assets/creator-1.jpg";
 import creator2 from "@/assets/creator-2.jpg";
 import creator3 from "@/assets/creator-3.jpg";
@@ -45,7 +46,7 @@ const showcase = [
     blurb: "Senior counsel for in-house teams: audits, playbooks and operating models that stick.",
   },
   {
-    video: showcase8.url,
+    video: showcaseCommerce.url,
     poster: creator2,
     title: "Commerce",
     blurb: "Shoppable content and storefront creative engineered to convert attention into revenue.",
