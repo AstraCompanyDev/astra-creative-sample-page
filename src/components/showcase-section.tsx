@@ -1,7 +1,7 @@
 import showcaseCreative from "@/assets/showcase-creative.mp4.asset.json";
 import showcase1 from "@/assets/showcase-1.mp4.asset.json";
 import showcase2 from "@/assets/showcase-2.mp4.asset.json";
-import showcase3 from "@/assets/showcase-3.mp4.asset.json";
+import showcaseStrategy from "@/assets/showcase-strategy.mp4.asset.json";
 import showcase4 from "@/assets/showcase-4.mp4.asset.json";
 import showcase5 from "@/assets/showcase-5.mp4.asset.json";
 import showcase6 from "@/assets/showcase-6.mp4.asset.json";
@@ -26,7 +26,7 @@ const showcase = [
     blurb: "Creative-first media buying across Meta, TikTok, YouTube and beyond — scaled weekly on winners.",
   },
   {
-    video: showcase3.url,
+    video: showcaseStrategy.url,
     poster: creator3,
     title: "Strategy",
     blurb: "Positioning, narrative and go-to-market thinking that gives every asset a reason to exist.",
