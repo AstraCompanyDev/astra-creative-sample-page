@@ -126,47 +126,6 @@ function Home() {
 
         <ShowcaseSection />
 
-        {/* Services */}
-        <section className="border-t border-border py-24" id="services">
-          <div className="mx-auto max-w-7xl px-5 sm:px-8">
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-              <div>
-                <p className="font-display text-xs uppercase tracking-widest text-primary">
-                  What we do
-                </p>
-                <h2 className="mt-4 text-4xl sm:text-6xl">
-                  Six ways we
-                  <br />
-                  <span className="text-acid">buy attention back</span>
-                </h2>
-              </div>
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 font-display text-sm uppercase text-primary hover:underline"
-              >
-                Talk to us <ArrowUpRight className="size-4" />
-              </Link>
-            </div>
-
-            <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
-              {services.map((service, i) => (
-                <div
-                  key={service.title}
-                  className="group bg-background p-8 transition-colors hover:bg-card"
-                >
-                  <span className="font-mono text-xs text-muted-foreground">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="mt-6 text-2xl transition-colors group-hover:text-primary">
-                    {service.title}
-                  </h3>
-                  <p className="mt-3 text-sm text-muted-foreground">{service.copy}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Work teaser */}
         <section id="work" className="border-t border-border bg-card py-24">
           <div className="mx-auto max-w-7xl px-5 sm:px-8">
@@ -208,6 +167,48 @@ function Home() {
             </div>
           </div>
         </section>
+
+        {/* Services */}
+        <section className="border-t border-border py-24" id="services">
+          <div className="mx-auto max-w-7xl px-5 sm:px-8">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="font-display text-xs uppercase tracking-widest text-primary">
+                  What we do
+                </p>
+                <h2 className="mt-4 text-4xl sm:text-6xl">
+                  Six ways we
+                  <br />
+                  <span className="text-acid">buy attention back</span>
+                </h2>
+              </div>
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 font-display text-sm uppercase text-primary hover:underline"
+              >
+                Talk to us <ArrowUpRight className="size-4" />
+              </Link>
+            </div>
+
+            <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+              {services.map((service, i) => (
+                <div
+                  key={service.title}
+                  className="group bg-background p-8 transition-colors hover:bg-card"
+                >
+                  <span className="font-mono text-xs text-muted-foreground">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="mt-6 text-2xl transition-colors group-hover:text-primary">
+                    {service.title}
+                  </h3>
+                  <p className="mt-3 text-sm text-muted-foreground">{service.copy}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
 
         {/* Process teaser */}
         <section className="border-t border-border py-24">
