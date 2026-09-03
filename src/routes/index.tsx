@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { Marquee } from "@/components/marquee";
 import { ShowcaseSection } from "@/components/showcase-section";
+import { WorkCarousel, type BrandCard } from "@/components/work-carousel";
 
 import heroTexture from "@/assets/hero-texture.jpg";
 import heroVideoAsset from "@/assets/hero-video.mp4.asset.json";
