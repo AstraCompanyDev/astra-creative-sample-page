@@ -210,45 +210,6 @@ function Home() {
         </section>
 
 
-        {/* Process teaser */}
-        <section className="border-t border-border py-24">
-          <div className="mx-auto max-w-7xl px-5 sm:px-8">
-            <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr]">
-              <div>
-                <p className="font-display text-xs uppercase tracking-widest text-primary">
-                  How it works
-                </p>
-                <h2 className="mt-4 text-4xl sm:text-6xl">
-                  A process built
-                  <br />
-                  for <span className="text-acid">speed</span>
-                </h2>
-                <Link
-                  to="/contact"
-                  className="mt-8 inline-flex items-center gap-2 font-display text-sm uppercase text-primary hover:underline"
-                >
-                  Start a project <ArrowUpRight className="size-4" />
-                </Link>
-              </div>
-              <ol className="space-y-px overflow-hidden rounded-lg border border-border bg-border">
-                {[
-                  ["Immerse", "Two weeks inside your data, category and community."],
-                  ["Frame", "A single sharp platform idea plus the creator archetypes to carry it."],
-                  ["Produce", "Concurrent creator shoots. First cuts in 72 hours."],
-                  ["Amplify", "Paid layered on winners, weekly creative refresh."],
-                ].map(([step, copy], i) => (
-                  <li key={step} className="flex gap-6 bg-background p-7">
-                    <span className="font-display text-2xl text-primary">0{i + 1}</span>
-                    <div>
-                      <h3 className="text-xl">{step}</h3>
-                      <p className="mt-2 text-sm text-muted-foreground">{copy}</p>
-                    </div>
-                  </li>
-                ))}
-              </ol>
-            </div>
-          </div>
-        </section>
       </main>
 
       <SiteFooter />
