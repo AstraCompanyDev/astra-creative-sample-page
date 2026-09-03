@@ -141,10 +141,6 @@ function Home() {
                 { brand: "U-Topia", kind: "Hospitality brand build", result: "Sold out opening week", logo: utopiaLogoAsset.url },
                 { brand: "Moooment", kind: "Mental-health brand launch", result: "3,100+ matched clinicians", image: mooomentCardAsset.url },
                 { brand: "CoFoundersLab", kind: "Marketplace brand system", result: "2x founder signups" },
-                { brand: "UpFounder", kind: "Startup platform launch", result: "40k waitlist in 90 days" },
-                { brand: "Miracle Regen", kind: "Healthcare brand build", result: "Fully booked Q1" },
-                { brand: "Astra Healthcare", kind: "Clinic brand & content", result: "+210% patient leads" },
-                { brand: "Vymune", kind: "Biotech brand launch", result: "Series A closed" },
               ] as BrandCard[]}
             />
           </div>
