@@ -46,7 +46,7 @@ const showcase = [
     blurb: "Senior counsel for in-house teams: audits, playbooks and operating models that stick.",
   },
   {
-    video: showcase8.url,
+    video: showcaseCommerce.url,
     poster: creator2,
     title: "Commerce",
     blurb: "Shoppable content and storefront creative engineered to convert attention into revenue.",
