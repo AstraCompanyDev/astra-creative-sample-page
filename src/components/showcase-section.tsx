@@ -14,7 +14,7 @@ import creator4 from "@/assets/creator-4.jpg";
 
 const showcase = [
   {
-    video: showcase1.url,
+    video: showcaseCreative.url,
     poster: creator1,
     title: "Creative",
     blurb: "Scroll-stopping concepts, design systems and ad creative built to travel across every feed.",
