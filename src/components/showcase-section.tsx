@@ -7,6 +7,7 @@ import showcase5 from "@/assets/showcase-5.mp4.asset.json";
 import showcase6 from "@/assets/showcase-6.mp4.asset.json";
 import showcase7 from "@/assets/showcase-7.mp4.asset.json";
 import showcase8 from "@/assets/showcase-8.mp4.asset.json";
+import showcaseTalent from "@/assets/showcase-talent.mp4.asset.json";
 import creator1 from "@/assets/creator-1.jpg";
 import creator2 from "@/assets/creator-2.jpg";
 import creator3 from "@/assets/creator-3.jpg";
@@ -50,7 +51,7 @@ const showcase = [
     blurb: "Shoppable content and storefront creative engineered to convert attention into revenue.",
   },
   {
-    video: showcase7.url,
+    video: showcaseTalent.url,
     poster: creator3,
     title: "Influencer & Talent",
     blurb: "Casting, deals and whitelisting from a 400-creator roster — partnerships that actually perform.",
