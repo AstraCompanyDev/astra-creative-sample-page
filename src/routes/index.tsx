@@ -12,6 +12,7 @@ import heroVideoAsset from "@/assets/hero-video.mp4.asset.json";
 import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
 import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
 import zeeworkCardAsset from "@/assets/zeework-card.jpg.asset.json";
+import cflBoxAsset from "@/assets/cfl-box.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -140,7 +141,7 @@ function Home() {
                 { brand: "ZeeWork", kind: "Marketplace launch", result: "Building a global marketplace for freelancers that reached $10,000 in revenue in the first 30 days", image: zeeworkCardAsset.url },
                 { brand: "U-Topia", kind: "Fintech brand build", result: "Building a leading global fintech that reached 5,000 pre-launch users", logo: utopiaLogoAsset.url },
                 { brand: "Moooment", kind: "Application suite", result: "Building their whole application suite to help provide therapy to those in need", image: mooomentCardAsset.url },
-                { brand: "CoFoundersLab", kind: "Platform growth", result: "Helping the site reach over 800,000 users on platform" },
+                { brand: "CoFoundersLab", kind: "Platform growth", result: "Helping the site reach over 800,000 users on platform", image: cflBoxAsset.url },
               ] as BrandCard[]}
 
             />
