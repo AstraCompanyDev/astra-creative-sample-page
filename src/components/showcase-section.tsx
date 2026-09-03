@@ -21,7 +21,7 @@ const showcase = [
     blurb: "Scroll-stopping concepts, design systems and ad creative built to travel across every feed.",
   },
   {
-    video: showcase2.url,
+    video: showcase5.url,
     poster: creator2,
     title: "Media",
     blurb: "Creative-first media buying across Meta, TikTok, YouTube and beyond — scaled weekly on winners.",
@@ -39,7 +39,7 @@ const showcase = [
     blurb: "One team across brand, social, paid and production — no handoffs, no diluted ideas.",
   },
   {
-    video: showcase5.url,
+    video: showcase2.url,
     poster: creator1,
     title: "Consulting",
     blurb: "Senior counsel for in-house teams: audits, playbooks and operating models that stick.",
