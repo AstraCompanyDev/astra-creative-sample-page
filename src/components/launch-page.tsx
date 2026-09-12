@@ -65,14 +65,14 @@ export function LaunchPage() {
   const submit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setSubmitted(true);
-    toast.success("Application received. The Launch OS team will be in touch.");
+    toast.success("Application received. The Launch team will be in touch.");
   };
 
   return (
     <div className="launch-page min-h-screen bg-launch-ink text-launch-paper">
       <header className="absolute inset-x-0 top-0 z-20 py-7">
         <div className="mx-auto flex max-w-6xl items-center justify-center px-5">
-          <img src={launchLogoAsset.url} alt="Launch OS Marketing" className="h-14 w-auto object-contain" />
+          <img src={launchLogoAsset.url} alt="Launch Marketing" className="h-14 w-auto object-contain" />
         </div>
       </header>
 
@@ -93,7 +93,7 @@ export function LaunchPage() {
               <div className="aspect-video bg-launch-panel">
                 <iframe
                   src="https://fast.wistia.net/embed/iframe/jjd95u0eal?seo=false&videoFoam=true&playerColor=f63028"
-                  title="Launch OS client acquisition system"
+                  title="Launch client acquisition system"
                   allow="autoplay; fullscreen"
                   className="h-full w-full"
                 />
@@ -182,7 +182,7 @@ export function LaunchPage() {
             <Tabs defaultValue="ads" className="mt-12">
               <TabsList className="mx-auto grid h-12 max-w-md grid-cols-2 bg-launch-panel p-1">
                 <TabsTrigger value="ads" className="data-[state=active]:bg-launch-red data-[state=active]:text-launch-paper">Ads Engine</TabsTrigger>
-                <TabsTrigger value="growth" className="data-[state=active]:bg-launch-red data-[state=active]:text-launch-paper">Growth OS</TabsTrigger>
+                <TabsTrigger value="growth" className="data-[state=active]:bg-launch-red data-[state=active]:text-launch-paper">Growth</TabsTrigger>
               </TabsList>
               {Object.entries(systemTracks).map(([key, phases]) => (
                 <TabsContent key={key} value={key} className="mt-10 grid gap-px overflow-hidden rounded-md border border-launch-paper/10 bg-launch-paper/10 lg:grid-cols-3">
@@ -243,7 +243,7 @@ export function LaunchPage() {
       <footer className="border-t border-launch-paper/10 px-5 py-10 text-center text-xs text-launch-paper/40">
         <div className="mx-auto max-w-5xl">
           <p>Results are not typical or guaranteed. Every business and market is different, and your results depend on many factors including your offer, execution and investment.</p>
-          <div className="mt-7 flex flex-col items-center justify-between gap-3 border-t border-launch-paper/10 pt-7 sm:flex-row"><p>© 2026 Launch OS Marketing — All Rights Reserved</p><p>Questions? <a href="mailto:info@astraagency.co" className="text-launch-paper/70 hover:text-launch-gold">info@astraagency.co</a></p></div>
+          <div className="mt-7 flex flex-col items-center justify-between gap-3 border-t border-launch-paper/10 pt-7 sm:flex-row"><p>© 2026 Launch Marketing — All Rights Reserved</p><p>Questions? <a href="mailto:info@astraagency.co" className="text-launch-paper/70 hover:text-launch-gold">info@astraagency.co</a></p></div>
         </div>
       </footer>
     </div>

@@ -20,7 +20,7 @@ export const testimonials = [
     role: "Top Speaker and Author",
     headline: "Helped Me Sell Out My Event",
     quote:
-      "Launch OS goes above and beyond. Responsive, solution-oriented, and they helped me sell out my event, Breakthrough 2025.",
+      "Launch goes above and beyond. Responsive, solution-oriented, and they helped me sell out my event, Breakthrough 2025.",
     image: "jerrid",
   },
   {
@@ -28,7 +28,7 @@ export const testimonials = [
     role: "VP of Sales + Leader",
     headline: "Quality of Life That Actually Matters",
     quote:
-      "If your quality of life matters to you as a business owner, you need to work with Launch OS.",
+      "If your quality of life matters to you as a business owner, you need to work with Launch.",
     image: "nico",
   },
   {
@@ -44,7 +44,7 @@ export const testimonials = [
     role: "Founder, STR Search",
     headline: "They Far Exceeded Our Expectations",
     quote:
-      "Before Launch OS, we had no idea what we were doing on the marketing side. They systemized everything and far exceeded our expectations.",
+      "Before Launch, we had no idea what we were doing on the marketing side. They systemized everything and far exceeded our expectations.",
     image: "ramsey",
   },
 ];
