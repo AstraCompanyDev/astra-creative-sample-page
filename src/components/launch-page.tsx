@@ -36,12 +36,10 @@ const images = {
 };
 
 const partnerLogos = [
-  { src: strSearchLogoAsset.url, alt: "STR Search" },
-  { src: pissMissileLogoAsset.url, alt: "Piss Missile" },
-  { src: aerrackLogoAsset.url, alt: "Aerrack" },
-  { src: alphaleteLogoAsset.url, alt: "Alphalete" },
-  { src: dontDieLogoAsset.url, alt: "Don't Die by Bryan Johnson" },
-  { src: blueprintLogoAsset.url, alt: "Blueprint by Bryan Johnson" },
+  { src: zeeworkCardAsset.url, alt: "ZeeWork" },
+  { src: utopiaLogoAsset.url, alt: "U-Topia" },
+  { src: mooomentCardAsset.url, alt: "Moooment" },
+  { src: cflBoxAsset.url, alt: "CoFoundersLab" },
 ];
 
 function ApplyButton({ children = "Book A Call" }: { children?: string }) {
