@@ -9,12 +9,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { faqs, systemTracks, team, testimonials, values } from "@/components/launch-page-data";
 
 import launchLogoAsset from "@/assets/launch/launch-logo.png.asset.json";
-import aerrackLogoAsset from "@/assets/launch/aerrack-logo.png.asset.json";
-import alphaleteLogoAsset from "@/assets/launch/alphalete-logo.png.asset.json";
-import dontDieLogoAsset from "@/assets/launch/dont-die-logo.png.asset.json";
-import blueprintLogoAsset from "@/assets/launch/blueprint-logo.png.asset.json";
-import strSearchLogoAsset from "@/assets/launch/str-search-logo.png.asset.json";
-import pissMissileLogoAsset from "@/assets/launch/piss-missile-logo.png.asset.json";
+import zeeworkCardAsset from "@/assets/zeework-card.jpg.asset.json";
+import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
+import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
+import cflBoxAsset from "@/assets/cfl-box.jpg.asset.json";
 import reneAsset from "@/assets/launch/rene.jpg.asset.json";
 import ramseyAsset from "@/assets/launch/ramsey.jpg.asset.json";
 import jerridAsset from "@/assets/launch/jerrid.jpeg.asset.json";
@@ -38,12 +36,10 @@ const images = {
 };
 
 const partnerLogos = [
-  { src: strSearchLogoAsset.url, alt: "STR Search" },
-  { src: pissMissileLogoAsset.url, alt: "Piss Missile" },
-  { src: aerrackLogoAsset.url, alt: "Aerrack" },
-  { src: alphaleteLogoAsset.url, alt: "Alphalete" },
-  { src: dontDieLogoAsset.url, alt: "Don't Die by Bryan Johnson" },
-  { src: blueprintLogoAsset.url, alt: "Blueprint by Bryan Johnson" },
+  { src: zeeworkCardAsset.url, alt: "ZeeWork" },
+  { src: utopiaLogoAsset.url, alt: "U-Topia" },
+  { src: mooomentCardAsset.url, alt: "Moooment" },
+  { src: cflBoxAsset.url, alt: "CoFoundersLab" },
 ];
 
 function ApplyButton({ children = "Book A Call" }: { children?: string }) {
@@ -106,7 +102,7 @@ export function LaunchPage() {
             <div className="mt-8"><ApplyButton>Scale My Business</ApplyButton></div>
 
             <p className="mt-14 text-xs font-semibold uppercase tracking-[0.2em] text-launch-paper/60">Businesses We Work With</p>
-            <div className="mx-auto mt-7 grid max-w-5xl grid-cols-2 items-center gap-7 sm:grid-cols-3 lg:grid-cols-6">
+            <div className="mx-auto mt-7 grid max-w-5xl grid-cols-2 items-center gap-7 sm:grid-cols-2 lg:grid-cols-4">
               {partnerLogos.map((logo) => <img key={logo.alt} src={logo.src} alt={logo.alt} className="mx-auto max-h-10 max-w-36 object-contain opacity-80" />)}
             </div>
           </div>
@@ -201,7 +197,7 @@ export function LaunchPage() {
         <section className="border-y border-launch-paper/10 bg-launch-panel px-5 py-20">
           <SectionHeading eyebrow="Our Network">Trusted <span className="text-launch-gold">Partners</span></SectionHeading>
           <p className="mx-auto mt-5 max-w-2xl text-center text-launch-paper/60">We are partnered with leaders in every industry who trust us to scale their vision.</p>
-          <div className="mx-auto mt-10 grid max-w-5xl grid-cols-2 items-center gap-8 sm:grid-cols-3 lg:grid-cols-6">{partnerLogos.map((logo) => <img key={logo.alt} src={logo.src} alt={logo.alt} className="mx-auto max-h-11 max-w-36 object-contain opacity-75" loading="lazy" />)}</div>
+          <div className="mx-auto mt-10 grid max-w-5xl grid-cols-2 items-center gap-8 sm:grid-cols-2 lg:grid-cols-4">{partnerLogos.map((logo) => <img key={logo.alt} src={logo.src} alt={logo.alt} className="mx-auto max-h-11 max-w-36 object-contain opacity-75" loading="lazy" />)}</div>
         </section>
 
         <section className="px-5 py-24">
