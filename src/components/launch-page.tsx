@@ -83,9 +83,6 @@ export function LaunchPage() {
       <main>
         <section className="launch-hero relative overflow-hidden px-5 pb-20 pt-32 text-center sm:pt-36">
           <div className="relative z-10 mx-auto max-w-6xl">
-            <span className="inline-flex rounded-full border border-launch-paper/15 bg-launch-paper/5 px-5 py-2 text-[10px] font-medium italic text-launch-paper/75 shadow-launch-red">
-              Business Owners Doing Over $100k A Month
-            </span>
             <h1 className="mx-auto mt-5 max-w-5xl font-launch text-4xl leading-[1.02] sm:text-6xl lg:text-7xl">
               Is Marketing The Biggest <span className="text-launch-red">Bottleneck</span> In Your Business?
             </h1>
