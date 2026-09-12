@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as DiscoveryCallRouteImport } from './routes/discovery-call'
+import { Route as LaunchPageRouteImport } from './routes/launch-page'
 import { Route as ProcessRouteImport } from './routes/process'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as WorkRouteImport } from './routes/work'
@@ -37,6 +38,11 @@ const DiscoveryCallRoute = DiscoveryCallRouteImport.update({
   path: '/discovery-call',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LaunchPageRoute = LaunchPageRouteImport.update({
+  id: '/launch-page',
+  path: '/launch-page',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProcessRoute = ProcessRouteImport.update({
   id: '/process',
   path: '/process',
@@ -58,6 +64,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/discovery-call': typeof DiscoveryCallRoute
+  '/launch-page': typeof LaunchPageRoute
   '/process': typeof ProcessRoute
   '/services': typeof ServicesRoute
   '/work': typeof WorkRoute
@@ -67,6 +74,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/discovery-call': typeof DiscoveryCallRoute
+  '/launch-page': typeof LaunchPageRoute
   '/process': typeof ProcessRoute
   '/services': typeof ServicesRoute
   '/work': typeof WorkRoute
@@ -77,6 +85,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/discovery-call': typeof DiscoveryCallRoute
+  '/launch-page': typeof LaunchPageRoute
   '/process': typeof ProcessRoute
   '/services': typeof ServicesRoute
   '/work': typeof WorkRoute
@@ -88,6 +97,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/discovery-call'
+    | '/launch-page'
     | '/process'
     | '/services'
     | '/work'
@@ -97,6 +107,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/discovery-call'
+    | '/launch-page'
     | '/process'
     | '/services'
     | '/work'
@@ -106,6 +117,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/discovery-call'
+    | '/launch-page'
     | '/process'
     | '/services'
     | '/work'
@@ -116,6 +128,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   DiscoveryCallRoute: typeof DiscoveryCallRoute
+  LaunchPageRoute: typeof LaunchPageRoute
   ProcessRoute: typeof ProcessRoute
   ServicesRoute: typeof ServicesRoute
   WorkRoute: typeof WorkRoute
@@ -151,6 +164,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DiscoveryCallRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/launch-page': {
+      id: '/launch-page'
+      path: '/launch-page'
+      fullPath: '/launch-page'
+      preLoaderRoute: typeof LaunchPageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/process': {
       id: '/process'
       path: '/process'
@@ -180,6 +200,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   DiscoveryCallRoute: DiscoveryCallRoute,
+  LaunchPageRoute: LaunchPageRoute,
   ProcessRoute: ProcessRoute,
   ServicesRoute: ServicesRoute,
   WorkRoute: WorkRoute,
