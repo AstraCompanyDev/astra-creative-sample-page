@@ -2,7 +2,9 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-const nav: ReadonlyArray<{ to: "/contact"; label: string }> = [];
+const nav: ReadonlyArray<{ to: "/launch-page"; label: string }> = [
+  { to: "/launch-page", label: "Launch Page" },
+];
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
