@@ -174,7 +174,7 @@ export function LaunchPage() {
           <div className="mx-auto max-w-6xl px-5">
             <h2 className="text-center font-launch text-4xl sm:text-6xl">Our Numbers Speak For Themselves</h2>
             <div className="mt-12 grid gap-8 text-center sm:grid-cols-3">
-              {[["$20 Million+", "Revenue Generated for Clients"], ["10 Million+", "Audience Managed"], ["$7 Figures+", "Ad Spend"]].map(([num, label]) => <div key={label}><p className="font-launch text-4xl sm:text-5xl">{num}</p><p className="mt-2 text-xs font-bold uppercase tracking-[0.16em]">{label}</p></div>)}
+              {[["$45 Million+", "Revenue Generated for Clients"], ["30 Million+", "Emails Sent"], ["10 Years+", "Experience"]].map(([num, label]) => <div key={label}><p className="font-launch text-4xl sm:text-5xl">{num}</p><p className="mt-2 text-xs font-bold uppercase tracking-[0.16em]">{label}</p></div>)}
             </div>
           </div>
         </section>
