@@ -206,14 +206,7 @@ export function LaunchPage() {
           </div>
         </section>
 
-        <section className="border-y border-launch-paper/10 bg-launch-panel px-5 py-24">
-          <div className="mx-auto max-w-6xl">
-            <SectionHeading eyebrow="Proof">They Said Yes.<br /><span className="text-launch-red">Look What Happened.</span></SectionHeading>
-            <p className="mx-auto mt-5 max-w-xl text-center text-launch-paper/60">Here's what happens when you stop guessing and start following the Launch OS playbook.</p>
-            <div className="mt-12 grid grid-cols-2 gap-3 lg:grid-cols-6">{[["+340%", "MRR Growth"], ["$847K", "Revenue"], ["4.2x", "ROAS"], ["2,847", "Leads"], ["34%", "Close Rate"], ["+127", "New Clients"]].map(([number, label]) => <div key={label} className="rounded-md border border-launch-paper/10 bg-launch-ink p-5 text-center"><p className="font-launch text-3xl text-launch-gold">{number}</p><p className="mt-2 text-[10px] font-bold uppercase tracking-[0.16em] text-launch-paper/50">{label}</p></div>)}</div>
-            <div className="mt-10 text-center"><ApplyButton>Get Results Like These</ApplyButton></div>
-          </div>
-        </section>
+
 
         <section className="overflow-hidden px-5 py-24">
           <div className="mx-auto max-w-6xl">
