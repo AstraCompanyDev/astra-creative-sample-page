@@ -247,7 +247,7 @@ export function LaunchPage() {
         <section className="launch-final-cta border-t border-launch-gold/20 px-5 py-24 text-center">
           <div className="relative z-10 mx-auto max-w-4xl">
             <h2 className="font-launch text-6xl sm:text-8xl">Ready to <span className="text-launch-red">Scale?</span></h2>
-            <div className="mx-auto mt-8 flex max-w-3xl flex-wrap justify-center gap-3">{["Doing $100k+ per month", "A proven offer", "Ready for a real partner"].map((item) => <span key={item} className="flex items-center gap-2 rounded-full border border-launch-paper/15 bg-launch-paper/5 px-4 py-2 text-xs"><Check className="size-4 text-launch-gold" />{item}</span>)}</div>
+            <div className="mx-auto mt-8 flex max-w-3xl flex-wrap justify-center gap-3">{["A proven offer", "Ready for a real partner", "Looking to scale fast"].map((item) => <span key={item} className="flex items-center gap-2 rounded-full border border-launch-paper/15 bg-launch-paper/5 px-4 py-2 text-xs"><Check className="size-4 text-launch-gold" />{item}</span>)}</div>
             <div className="mt-10"><ApplyButton>Book Your Strategy Call</ApplyButton></div>
           </div>
         </section>
