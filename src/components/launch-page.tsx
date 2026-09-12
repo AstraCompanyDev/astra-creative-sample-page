@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { faqs, systemTracks, team, testimonials, values } from "@/components/launch-page-data";
 
-import launchLogoAsset from "@/assets/launch/launch-logo.png.asset.json";
+
 import zeeworkCardAsset from "@/assets/zeework-card.jpg.asset.json";
 import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
 import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
