@@ -9,12 +9,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { faqs, systemTracks, team, testimonials, values } from "@/components/launch-page-data";
 
 import launchLogoAsset from "@/assets/launch/launch-logo.png.asset.json";
-import aerrackLogoAsset from "@/assets/launch/aerrack-logo.png.asset.json";
-import alphaleteLogoAsset from "@/assets/launch/alphalete-logo.png.asset.json";
-import dontDieLogoAsset from "@/assets/launch/dont-die-logo.png.asset.json";
-import blueprintLogoAsset from "@/assets/launch/blueprint-logo.png.asset.json";
-import strSearchLogoAsset from "@/assets/launch/str-search-logo.png.asset.json";
-import pissMissileLogoAsset from "@/assets/launch/piss-missile-logo.png.asset.json";
+import zeeworkCardAsset from "@/assets/zeework-card.jpg.asset.json";
+import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
+import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
+import cflBoxAsset from "@/assets/cfl-box.jpg.asset.json";
 import reneAsset from "@/assets/launch/rene.jpg.asset.json";
 import ramseyAsset from "@/assets/launch/ramsey.jpg.asset.json";
 import jerridAsset from "@/assets/launch/jerrid.jpeg.asset.json";
