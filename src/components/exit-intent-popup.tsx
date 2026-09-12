@@ -14,6 +14,7 @@ export function ExitIntentPopup() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
+    if (window.location.pathname === "/launch-page") return;
     if (sessionStorage.getItem(STORAGE_KEY)) return;
 
     let armed = false;

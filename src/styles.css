@@ -20,6 +20,7 @@
 
   --font-display: "Archivo Black", "Arial Black", sans-serif;
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-launch: "Archivo Black", "Arial Black", sans-serif;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -39,6 +40,13 @@
   --color-electric-foreground: var(--electric-foreground);
   --color-hot: var(--hot);
   --color-hot-foreground: var(--hot-foreground);
+  --color-launch-ink: var(--launch-ink);
+  --color-launch-panel: var(--launch-panel);
+  --color-launch-paper: var(--launch-paper);
+  --color-launch-red: var(--launch-red);
+  --color-launch-red-bright: var(--launch-red-bright);
+  --color-launch-gold: var(--launch-gold);
+  --color-launch-gold-soft: var(--launch-gold-soft);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
@@ -93,6 +101,15 @@
   );
   --shadow-glow: 0 20px 70px -25px color-mix(in oklab, var(--electric) 65%, transparent);
   --shadow-lime: 0 18px 50px -20px color-mix(in oklab, var(--primary) 55%, transparent);
+  --launch-ink: oklch(0.095 0.01 25);
+  --launch-panel: oklch(0.135 0.012 25);
+  --launch-paper: oklch(0.98 0.004 75);
+  --launch-red: oklch(0.62 0.24 29);
+  --launch-red-bright: oklch(0.68 0.25 29);
+  --launch-gold: oklch(0.84 0.16 88);
+  --launch-gold-soft: oklch(0.9 0.13 88);
+  --shadow-launch-red: 0 22px 70px -26px color-mix(in oklab, var(--launch-red) 70%, transparent);
+  --shadow-launch-gold: 0 16px 40px -18px color-mix(in oklab, var(--launch-gold) 65%, transparent);
 }
 
 @layer base {
@@ -174,4 +191,40 @@
 
 @utility rise {
   animation: rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@utility shadow-launch-red {
+  box-shadow: var(--shadow-launch-red);
+}
+
+@utility shadow-launch-gold {
+  box-shadow: var(--shadow-launch-gold);
+}
+
+.launch-page h1,
+.launch-page h2,
+.launch-page h3 {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.launch-hero {
+  background:
+    radial-gradient(circle at 50% 4%, color-mix(in oklab, var(--launch-red) 46%, transparent), transparent 37%),
+    var(--launch-ink);
+}
+
+.launch-final-cta {
+  background:
+    radial-gradient(circle at 50% 50%, color-mix(in oklab, var(--launch-red) 22%, transparent), transparent 55%),
+    var(--launch-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .launch-page *,
+  .launch-page *::before,
+  .launch-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
