@@ -72,7 +72,10 @@ export function LaunchPage() {
     <div className="launch-page min-h-screen bg-launch-ink text-launch-paper">
       <header className="absolute inset-x-0 top-0 z-20 py-7">
         <div className="mx-auto flex max-w-6xl items-center justify-center px-5">
-          <img src={launchLogoAsset.url} alt="Launch Marketing" className="h-14 w-auto object-contain" />
+          <span className="flex items-center gap-2">
+            <span className="h-3 w-3 rounded-full bg-launch-gold" />
+            <span className="font-launch text-xl tracking-tight uppercase text-launch-paper">Astra Creative</span>
+          </span>
         </div>
       </header>
 
