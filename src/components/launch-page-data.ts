@@ -111,7 +111,7 @@ export const values = [
 export const faqs = [
   {
     q: "Who is this for?",
-    a: "Our partners are typically established business owners doing $150,000+ per month who know marketing is the bottleneck holding them back. If you have a proven offer but are tired of disconnected funnels, ads that don't convert, and a system that feels like a black box, this is for you.",
+    a: "Our partners are typically established businesses that know marketing is the bottleneck holding them back. If you have a proven offer but are tired of disconnected funnels, ads that don't convert, and a system that feels like a black box, this is for you.",
   },
   {
     q: "What exactly do you do?",
