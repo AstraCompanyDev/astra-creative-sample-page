@@ -194,11 +194,9 @@ export function LaunchPage() {
           </div>
         </section>
 
-        <section className="border-y border-launch-paper/10 bg-launch-panel px-5 py-20">
-          <SectionHeading eyebrow="Our Network">Trusted <span className="text-launch-gold">Partners</span></SectionHeading>
-          <p className="mx-auto mt-5 max-w-2xl text-center text-launch-paper/60">We are partnered with leaders in every industry who trust us to scale their vision.</p>
-          <div className="mx-auto mt-10 grid max-w-5xl grid-cols-2 items-center gap-8 sm:grid-cols-2 lg:grid-cols-4">{partnerLogos.map((logo) => <img key={logo.alt} src={logo.src} alt={logo.alt} className="mx-auto max-h-11 max-w-36 object-contain opacity-75" loading="lazy" />)}</div>
-        </section>
+
+
+
 
         <section className="px-5 py-24">
           <div className="mx-auto max-w-6xl">
