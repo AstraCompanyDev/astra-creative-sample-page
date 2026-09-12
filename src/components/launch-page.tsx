@@ -79,7 +79,7 @@ export function LaunchPage() {
       <main>
         <section className="launch-hero relative overflow-hidden px-5 pb-20 pt-32 text-center sm:pt-36">
           <div className="relative z-10 mx-auto max-w-6xl">
-            <h1 className="mx-auto mt-5 max-w-5xl font-launch text-4xl leading-[1.02] sm:text-6xl lg:text-7xl">
+            <h1 className="mx-auto mt-5 max-w-5xl font-launch text-3xl leading-[1.05] sm:text-5xl lg:text-6xl">
               Is Marketing The Biggest <span className="text-launch-red">Bottleneck</span> In Your Business?
             </h1>
             <p className="mx-auto mt-5 max-w-4xl text-sm leading-6 text-launch-paper/75 sm:text-base">
