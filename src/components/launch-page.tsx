@@ -170,7 +170,7 @@ export function LaunchPage() {
 
         <section className="px-5 py-24">
           <div className="mx-auto max-w-6xl">
-            <SectionHeading eyebrow="Real Results"><span className="text-launch-red">Scale.</span> Real Results.<br />Real People.</SectionHeading>
+            <SectionHeading eyebrow="Real Results"><span className="text-launch-red">Scale.</span> Real Results.</SectionHeading>
             <p className="mx-auto mt-5 max-w-2xl text-center text-launch-paper/60">Just a peek into how our partners scaled and crushed goals they once thought were impossible.</p>
             <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {testimonials.map((item) => (
