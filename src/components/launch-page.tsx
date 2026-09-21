@@ -159,6 +159,15 @@ export function LaunchPage() {
           </div>
         </section>
 
+        <section className="border-y border-launch-gold/15 bg-launch-gold py-16 text-launch-ink">
+          <div className="mx-auto max-w-6xl px-5">
+            <h2 className="text-center font-launch text-4xl sm:text-6xl">Our Numbers Speak For Themselves</h2>
+            <div className="mt-12 grid gap-8 text-center sm:grid-cols-3">
+              {[["$45 Million+", "Revenue Generated for Clients"], ["30 Million+", "Emails Sent"], ["10 Years+", "Experience"]].map(([num, label]) => <div key={label}><p className="font-launch text-4xl sm:text-5xl">{num}</p><p className="mt-2 text-xs font-bold uppercase tracking-[0.16em]">{label}</p></div>)}
+            </div>
+          </div>
+        </section>
+
         <section className="px-5 py-24">
           <div className="mx-auto max-w-6xl">
             <SectionHeading eyebrow="Real Results"><span className="text-launch-red">Scale.</span> Real Results.<br />Real People.</SectionHeading>
@@ -177,15 +186,6 @@ export function LaunchPage() {
               ))}
             </div>
             <div className="mt-12 text-center"><ApplyButton /></div>
-          </div>
-        </section>
-
-        <section className="border-y border-launch-gold/15 bg-launch-gold py-16 text-launch-ink">
-          <div className="mx-auto max-w-6xl px-5">
-            <h2 className="text-center font-launch text-4xl sm:text-6xl">Our Numbers Speak For Themselves</h2>
-            <div className="mt-12 grid gap-8 text-center sm:grid-cols-3">
-              {[["$45 Million+", "Revenue Generated for Clients"], ["30 Million+", "Emails Sent"], ["10 Years+", "Experience"]].map(([num, label]) => <div key={label}><p className="font-launch text-4xl sm:text-5xl">{num}</p><p className="mt-2 text-xs font-bold uppercase tracking-[0.16em]">{label}</p></div>)}
-            </div>
           </div>
         </section>
 
