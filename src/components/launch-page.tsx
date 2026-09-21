@@ -212,13 +212,6 @@ export function LaunchPage() {
 
 
 
-        <section className="px-5 py-24">
-          <div className="mx-auto max-w-6xl">
-            <SectionHeading eyebrow="The Team">Meet the <span className="text-launch-red">Executive Crew</span></SectionHeading>
-            <p className="mx-auto mt-5 max-w-xl text-center text-launch-paper/60">The team behind our partners. Real humans. Building real results.</p>
-            <div className="mt-14 grid grid-cols-2 gap-4 lg:grid-cols-4">{team.map((person) => <article key={person.name}><div className="aspect-[4/5] overflow-hidden rounded-md bg-launch-panel"><img src={images[person.image as keyof typeof images]} alt={person.name} className="h-full w-full object-cover grayscale transition duration-500 hover:grayscale-0" loading="lazy" /></div><h3 className="mt-4 font-launch text-xl">{person.name}</h3><p className="mt-1 text-xs uppercase tracking-[0.12em] text-launch-gold">{person.role}</p></article>)}</div>
-          </div>
-        </section>
 
 
 
