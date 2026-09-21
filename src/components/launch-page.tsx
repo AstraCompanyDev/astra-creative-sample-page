@@ -12,7 +12,7 @@ import { faqs, systemTracks, team, testimonials, values } from "@/components/lau
 import zeeworkCardAsset from "@/assets/zeework-card.jpg.asset.json";
 import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
 import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
-import cflBoxAsset from "@/assets/cfl-box.jpg.asset.json";
+import cofoundersLabLogoAsset from "@/assets/cofounderslab-logo.png.asset.json";
 import astraHealthcareAsset from "@/assets/astra-healthcare-logo.png.asset.json";
 import reneAsset from "@/assets/launch/rene.jpg.asset.json";
 import ramseyAsset from "@/assets/launch/ramsey.jpg.asset.json";
@@ -37,11 +37,11 @@ const images = {
 };
 
 const partnerLogos = [
-  { src: zeeworkCardAsset.url, alt: "ZeeWork" },
-  { src: utopiaLogoAsset.url, alt: "U-Topia" },
-  { src: mooomentCardAsset.url, alt: "Moooment" },
-  { src: cflBoxAsset.url, alt: "CoFoundersLab" },
-  { src: astraHealthcareAsset.url, alt: "Astra Healthcare" },
+  { src: zeeworkCardAsset.url, alt: "ZeeWork", imageClass: "object-cover" },
+  { src: utopiaLogoAsset.url, alt: "U-Topia", imageClass: "object-contain p-5 invert" },
+  { src: mooomentCardAsset.url, alt: "Moooment", imageClass: "object-cover" },
+  { src: cofoundersLabLogoAsset.url, alt: "CoFoundersLab", imageClass: "object-contain p-4" },
+  { src: astraHealthcareAsset.url, alt: "Astra Healthcare", imageClass: "object-contain p-4" },
 ];
 
 function ApplyButton({ children = "Book A Call" }: { children?: string }) {
@@ -107,8 +107,17 @@ export function LaunchPage() {
             <div className="mt-8"><ApplyButton>Scale My Business</ApplyButton></div>
 
             <p className="mt-14 text-xs font-semibold uppercase tracking-[0.2em] text-launch-paper/60">Businesses We Work With</p>
-            <div className="mx-auto mt-7 grid max-w-5xl grid-cols-2 items-center gap-7 sm:grid-cols-3 lg:grid-cols-5">
-              {partnerLogos.map((logo) => <img key={logo.alt} src={logo.src} alt={logo.alt} className="mx-auto max-h-10 max-w-36 object-contain opacity-80" />)}
+            <div className="mx-auto mt-7 grid max-w-6xl grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+              {partnerLogos.map((logo) => (
+                <div key={logo.alt} className="overflow-hidden rounded-md border border-launch-paper/10 bg-launch-paper">
+                  <div className="h-24 w-full overflow-hidden">
+                    <img src={logo.src} alt={logo.alt} className={`h-full w-full ${logo.imageClass}`} />
+                  </div>
+                  <p className="border-t border-launch-ink/10 px-2 py-2 text-center text-[10px] font-bold uppercase text-launch-ink">
+                    {logo.alt}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
