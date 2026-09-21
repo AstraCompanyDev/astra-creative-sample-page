@@ -178,6 +178,19 @@
   }
 }
 
+.launch-logo-track {
+  animation: launch-logo-scroll 24s linear infinite;
+}
+
+@keyframes launch-logo-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
+
 @keyframes rise {
   from {
     opacity: 0;
@@ -221,6 +234,10 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .launch-logo-track {
+    animation: none;
+  }
+
   .launch-page *,
   .launch-page *::before,
   .launch-page *::after {

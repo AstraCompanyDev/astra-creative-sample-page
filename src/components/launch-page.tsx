@@ -9,11 +9,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { faqs, systemTracks, team, testimonials, values } from "@/components/launch-page-data";
 
 
-import zeeworkCardAsset from "@/assets/zeework-card.jpg.asset.json";
-import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
-import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
-import cofoundersLabLogoAsset from "@/assets/cofounderslab-logo.png.asset.json";
-import astraHealthcareAsset from "@/assets/astra-healthcare-logo.png.asset.json";
+import astraHealthcareAsset from "@/assets/launch/astra-healthcare-white.png.asset.json";
+import gooodMailAsset from "@/assets/launch/goood-mail.png.asset.json";
+import utopiaAsset from "@/assets/launch/u-topia-white.png.asset.json";
+import upfounderAsset from "@/assets/launch/upfounder.png.asset.json";
 import reneAsset from "@/assets/launch/rene.jpg.asset.json";
 import ramseyAsset from "@/assets/launch/ramsey.jpg.asset.json";
 import jerridAsset from "@/assets/launch/jerrid.jpeg.asset.json";
@@ -37,11 +36,10 @@ const images = {
 };
 
 const partnerLogos = [
-  { src: zeeworkCardAsset.url, alt: "ZeeWork", imageClass: "object-cover" },
-  { src: utopiaLogoAsset.url, alt: "U-Topia", imageClass: "object-contain p-5 invert" },
-  { src: mooomentCardAsset.url, alt: "Moooment", imageClass: "object-cover" },
-  { src: cofoundersLabLogoAsset.url, alt: "CoFoundersLab", imageClass: "object-contain p-4" },
-  { src: astraHealthcareAsset.url, alt: "Astra Healthcare", imageClass: "object-contain p-4" },
+  { src: astraHealthcareAsset.url, alt: "Astra Healthcare" },
+  { src: gooodMailAsset.url, alt: "Goood Mail" },
+  { src: utopiaAsset.url, alt: "U-Topia" },
+  { src: upfounderAsset.url, alt: "Upfounder" },
 ];
 
 function ApplyButton({ children = "Book A Call" }: { children?: string }) {
@@ -107,17 +105,19 @@ export function LaunchPage() {
             <div className="mt-8"><ApplyButton>Scale My Business</ApplyButton></div>
 
             <p className="mt-14 text-xs font-semibold uppercase tracking-[0.2em] text-launch-paper/60">Businesses We Work With</p>
-            <div className="mx-auto mt-7 grid max-w-6xl grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-              {partnerLogos.map((logo) => (
-                <div key={logo.alt} className="overflow-hidden rounded-md border border-launch-paper/10 bg-launch-paper">
-                  <div className="h-24 w-full overflow-hidden">
-                    <img src={logo.src} alt={logo.alt} className={`h-full w-full ${logo.imageClass}`} />
+            <div className="relative left-1/2 mt-7 w-screen -translate-x-1/2 overflow-hidden">
+              <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-linear-to-r from-launch-ink to-transparent sm:w-28" />
+              <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-linear-to-l from-launch-ink to-transparent sm:w-28" />
+              <div className="launch-logo-track flex w-max items-center gap-4 px-2">
+                {[...partnerLogos, ...partnerLogos].map((logo, index) => (
+                  <div
+                    key={`${logo.alt}-${index}`}
+                    className="flex h-28 w-72 shrink-0 items-center justify-center rounded-md border border-launch-paper/10 bg-launch-panel px-7 sm:w-80"
+                  >
+                    <img src={logo.src} alt={index < partnerLogos.length ? logo.alt : ""} className="max-h-16 w-full object-contain" />
                   </div>
-                  <p className="border-t border-launch-ink/10 px-2 py-2 text-center text-[10px] font-bold uppercase text-launch-ink">
-                    {logo.alt}
-                  </p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </section>
