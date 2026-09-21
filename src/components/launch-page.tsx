@@ -107,7 +107,7 @@ export function LaunchPage() {
             <div className="mt-8"><ApplyButton>Scale My Business</ApplyButton></div>
 
             <p className="mt-14 text-xs font-semibold uppercase tracking-[0.2em] text-launch-paper/60">Businesses We Work With</p>
-            <div className="mx-auto mt-7 grid max-w-5xl grid-cols-2 items-center gap-7 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mx-auto mt-7 grid max-w-5xl grid-cols-2 items-center gap-7 sm:grid-cols-3 lg:grid-cols-5">
               {partnerLogos.map((logo) => <img key={logo.alt} src={logo.src} alt={logo.alt} className="mx-auto max-h-10 max-w-36 object-contain opacity-80" />)}
             </div>
           </div>
