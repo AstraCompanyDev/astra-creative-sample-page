@@ -13,6 +13,7 @@ import zeeworkCardAsset from "@/assets/zeework-card.jpg.asset.json";
 import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
 import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
 import cflBoxAsset from "@/assets/cfl-box.jpg.asset.json";
+import astraHealthcareAsset from "@/assets/astra-healthcare-logo.png.asset.json";
 import reneAsset from "@/assets/launch/rene.jpg.asset.json";
 import ramseyAsset from "@/assets/launch/ramsey.jpg.asset.json";
 import jerridAsset from "@/assets/launch/jerrid.jpeg.asset.json";
@@ -40,6 +41,7 @@ const partnerLogos = [
   { src: utopiaLogoAsset.url, alt: "U-Topia" },
   { src: mooomentCardAsset.url, alt: "Moooment" },
   { src: cflBoxAsset.url, alt: "CoFoundersLab" },
+  { src: astraHealthcareAsset.url, alt: "Astra Healthcare" },
 ];
 
 function ApplyButton({ children = "Book A Call" }: { children?: string }) {
@@ -105,7 +107,7 @@ export function LaunchPage() {
             <div className="mt-8"><ApplyButton>Scale My Business</ApplyButton></div>
 
             <p className="mt-14 text-xs font-semibold uppercase tracking-[0.2em] text-launch-paper/60">Businesses We Work With</p>
-            <div className="mx-auto mt-7 grid max-w-5xl grid-cols-2 items-center gap-7 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mx-auto mt-7 grid max-w-5xl grid-cols-2 items-center gap-7 sm:grid-cols-3 lg:grid-cols-5">
               {partnerLogos.map((logo) => <img key={logo.alt} src={logo.src} alt={logo.alt} className="mx-auto max-h-10 max-w-36 object-contain opacity-80" />)}
             </div>
           </div>
