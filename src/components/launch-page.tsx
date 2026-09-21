@@ -41,6 +41,7 @@ const partnerLogos = [
   { src: utopiaLogoAsset.url, alt: "U-Topia" },
   { src: mooomentCardAsset.url, alt: "Moooment" },
   { src: cflBoxAsset.url, alt: "CoFoundersLab" },
+  { src: astraHealthcareAsset.url, alt: "Astra Healthcare" },
 ];
 
 function ApplyButton({ children = "Book A Call" }: { children?: string }) {
