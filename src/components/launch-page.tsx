@@ -22,6 +22,7 @@ import danteAsset from "@/assets/launch/dante.jpg.asset.json";
 import alecAsset from "@/assets/launch/alec.jpg.asset.json";
 import spencerAsset from "@/assets/launch/spencer.jpg.asset.json";
 import connorAsset from "@/assets/launch/connor.png.asset.json";
+import launchLogoAsset from "@/assets/launch/launch-creative-logo.png.asset.json";
 
 const images = {
   rene: reneAsset.url,
@@ -72,10 +73,11 @@ export function LaunchPage() {
     <div className="launch-page min-h-screen bg-launch-ink text-launch-paper">
       <header className="absolute inset-x-0 top-0 z-20 py-7">
         <div className="mx-auto flex max-w-6xl items-center justify-center px-5">
-          <span className="flex items-center gap-2">
-            <span className="h-3 w-3 rounded-full bg-launch-gold" />
-            <span className="font-launch text-xl tracking-tight uppercase text-launch-paper">Astra Creative</span>
-          </span>
+          <img
+            src={launchLogoAsset.url}
+            alt="Launch Creative"
+            className="h-10 w-auto sm:h-12"
+          />
         </div>
       </header>
 
