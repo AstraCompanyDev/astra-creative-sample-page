@@ -106,7 +106,7 @@ export function LaunchPage() {
             </div>
             <div className="mt-8"><ApplyButton>Scale My Business</ApplyButton></div>
 
-            <p className="mt-14 text-xs font-semibold uppercase tracking-[0.2em] text-launch-paper/60">Businesses We Work With</p>
+            <p className="mt-14 text-sm font-semibold uppercase tracking-[0.2em] text-launch-paper/60 sm:text-base">Businesses We Work With</p>
             <div className="relative left-1/2 mt-7 w-screen -translate-x-1/2 overflow-hidden">
               <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-linear-to-r from-launch-ink to-transparent sm:w-28" />
               <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-linear-to-l from-launch-ink to-transparent sm:w-28" />
