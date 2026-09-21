@@ -130,7 +130,7 @@ export const faqs = [
     a: "Complete the application on this page. We'll review your business, goals and current bottlenecks, then invite qualified founders to a strategy call.",
   },
   {
-    q: "What if I'm not doing $150k/month yet?",
+    q: "What if my business is earlier-stage?",
     a: "Apply if you have a proven offer and clear momentum. We review fit based on the whole business, not one number in isolation.",
   },
   {
