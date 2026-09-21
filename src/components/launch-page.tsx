@@ -175,7 +175,7 @@ export function LaunchPage() {
             <SectionHeading eyebrow="Real Results"><span className="text-launch-red">Scale.</span> Real Results.</SectionHeading>
             <p className="mx-auto mt-5 max-w-2xl text-center text-launch-paper/60">Just a peek into how our partners scaled and crushed goals they once thought were impossible.</p>
             <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-              {testimonials.map((item) => (
+              {testimonials.slice(0, 3).map((item) => (
                 <article key={item.name} className="rounded-md border border-launch-paper/10 bg-launch-panel p-6">
                   <div className="flex gap-1 text-launch-gold" aria-label="5 out of 5 stars">{Array.from({ length: 5 }).map((_, i) => <Star key={i} className="size-3 fill-current" />)}</div>
                   <h3 className="mt-5 font-launch text-2xl leading-tight">“{item.headline}”</h3>
