@@ -108,13 +108,13 @@ export function LaunchPage() {
             <div className="relative left-1/2 mt-7 w-screen -translate-x-1/2 overflow-hidden">
               <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-linear-to-r from-launch-ink to-transparent sm:w-28" />
               <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-linear-to-l from-launch-ink to-transparent sm:w-28" />
-              <div className="launch-logo-track flex w-max items-center gap-4 px-2">
+              <div className="launch-logo-track flex w-max items-center gap-5 px-2">
                 {[...partnerLogos, ...partnerLogos].map((logo, index) => (
                   <div
                     key={`${logo.alt}-${index}`}
-                    className="flex h-28 w-72 shrink-0 items-center justify-center rounded-md border border-launch-paper/10 bg-launch-panel px-7 sm:w-80"
+                    className="flex h-44 w-96 shrink-0 items-center justify-center rounded-md border border-launch-paper/10 bg-launch-panel px-10 sm:w-[28rem]"
                   >
-                    <img src={logo.src} alt={index < partnerLogos.length ? logo.alt : ""} className="max-h-16 w-full object-contain" />
+                    <img src={logo.src} alt={index < partnerLogos.length ? logo.alt : ""} className="max-h-28 w-full object-contain" />
                   </div>
                 ))}
               </div>
