@@ -13,6 +13,7 @@ import zeeworkCardAsset from "@/assets/zeework-card.jpg.asset.json";
 import utopiaLogoAsset from "@/assets/utopia-logo-white.png.asset.json";
 import mooomentCardAsset from "@/assets/moooment-card.jpg.asset.json";
 import cflBoxAsset from "@/assets/cfl-box.jpg.asset.json";
+import astraHealthcareAsset from "@/assets/astra-healthcare-logo.png.asset.json";
 import reneAsset from "@/assets/launch/rene.jpg.asset.json";
 import ramseyAsset from "@/assets/launch/ramsey.jpg.asset.json";
 import jerridAsset from "@/assets/launch/jerrid.jpeg.asset.json";
