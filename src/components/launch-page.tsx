@@ -26,6 +26,7 @@ const images = {
   rene: reneAsset.url,
   ramsey: ramseyAsset.url,
   jerrid: jerridAsset.url,
+  emmanuel: emmanuelAsset.url,
   nico: nicoAsset.url,
   trey: treyAsset.url,
   dante: danteAsset.url,
