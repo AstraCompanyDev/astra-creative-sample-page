@@ -21,6 +21,7 @@ import spencerAsset from "@/assets/launch/spencer.jpg.asset.json";
 import connorAsset from "@/assets/launch/connor.png.asset.json";
 import launchLogoAsset from "@/assets/launch/launch-creative-logo.png.asset.json";
 import emmanuelAsset from "@/assets/launch/emmanuel-quezada.png.asset.json";
+import cofounderslabLogoAsset from "@/assets/cofounderslab-logo.png.asset.json";
 
 const images = {
   rene: reneAsset.url,
