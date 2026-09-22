@@ -1,10 +1,10 @@
 export const testimonials = [
   {
-    name: "René Rodriguez",
-    role: "Speaking Coach + Master Keynote Speaker",
-    headline: "A Complete Breakthrough in My Business",
+    name: "Team, CoFoundersLab",
+    role: "Founder Platform",
+    headline: "800,000 users",
     quote:
-      "Dante and Alec created a complete breakthrough in my business. I didn't realize how much revenue I was leaving on the table until they stepped in.",
+      "Launch Creative helped us scale the platform to over 800,000 users — sharpening our messaging, funnels, and content until growth became predictable.",
     image: "rene",
   },
   {
