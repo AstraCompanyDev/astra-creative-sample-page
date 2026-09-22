@@ -23,6 +23,7 @@ import launchLogoAsset from "@/assets/launch/launch-creative-logo.png.asset.json
 import emmanuelAsset from "@/assets/launch/emmanuel-quezada.png.asset.json";
 import cofounderslabLogoAsset from "@/assets/cofounderslab-logo.png.asset.json";
 import cofounderslabMarkAsset from "@/assets/launch/cofounderslab-mark.png.asset.json";
+import astraHealthcareMarkAsset from "@/assets/launch/astra-healthcare-white.png.asset.json";
 
 const images = {
   rene: reneAsset.url,
