@@ -60,7 +60,7 @@ function CalendlyEmbed() {
           parentElement: ref.current,
         });
       } else {
-        setTimeout(init, 250);
+        setTimeout(init, 300);
       }
     };
     if (!document.getElementById(id)) {
@@ -68,13 +68,18 @@ function CalendlyEmbed() {
       script.id = id;
       script.src = "https://assets.calendly.com/assets/external/widget.js";
       script.async = true;
-      script.onload = init;
       document.body.appendChild(script);
-    } else {
-      init();
     }
+    init();
   }, []);
-  return <div ref={ref} className="calendly-inline-widget" style={{ minWidth: "320px", height: "720px" }} />;
+  return (
+    <div
+      ref={ref}
+      className="calendly-inline-widget"
+      data-url="https://calendly.com/launch-creative?hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=f63028"
+      style={{ minWidth: "320px", height: "720px" }}
+    />
+  );
 }
 
 function SectionHeading({ eyebrow, children }: { eyebrow: string; children: React.ReactNode }) {
