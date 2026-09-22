@@ -16,11 +16,11 @@ export const testimonials = [
     image: "ramsey",
   },
   {
-    name: "Jerrid Sebesta",
-    role: "Top Speaker and Author",
+    name: "Emmanuel Quezada",
+    role: "Founder, U-Topia",
     headline: "Helped Me Sell Out My Event",
     quote:
-      "Launch goes above and beyond. Responsive, solution-oriented, and they helped me sell out my event, Breakthrough 2025.",
+      "Launch goes above and beyond. Responsive, solution-oriented, and they helped me sell out my event, FlowSummit 2026.",
     image: "jerrid",
   },
   {
