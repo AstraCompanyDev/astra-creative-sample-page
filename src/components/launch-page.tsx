@@ -1,10 +1,6 @@
-import { useState } from "react";
 import { ArrowRight, Check, ChevronDown, Play, Star } from "lucide-react";
-import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { faqs, systemTracks, team, testimonials, values } from "@/components/launch-page-data";
 
@@ -61,14 +57,6 @@ function SectionHeading({ eyebrow, children }: { eyebrow: string; children: Reac
 }
 
 export function LaunchPage() {
-  const [submitted, setSubmitted] = useState(false);
-
-  const submit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setSubmitted(true);
-    toast.success("Application received. The Launch team will be in touch.");
-  };
-
   return (
     <div className="launch-page min-h-screen bg-launch-ink text-launch-paper">
       <header className="absolute inset-x-0 top-0 z-20 py-7">
@@ -135,29 +123,16 @@ export function LaunchPage() {
                 {["A focused growth diagnosis", "A strategy call with the team", "Clear next steps for your acquisition system"].map((item) => <li key={item} className="flex gap-3"><Check className="mt-0.5 size-4 text-launch-gold" />{item}</li>)}
               </ul>
             </div>
-            <div className="rounded-md bg-launch-paper p-6 text-launch-ink sm:p-8">
-              {submitted ? (
-                <div className="py-16 text-center">
-                  <span className="mx-auto flex size-14 items-center justify-center rounded-full bg-launch-gold"><Check className="size-7" /></span>
-                  <h3 className="mt-5 font-launch text-3xl">Application received.</h3>
-                  <p className="mt-2 text-sm text-launch-ink/60">We’ll review your answers and be in touch with the next step.</p>
-                </div>
-              ) : (
-                <form onSubmit={submit} className="space-y-4">
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    <Input required name="name" aria-label="Full name" placeholder="Full name" className="h-12 border-launch-ink/15" />
-                    <Input required name="company" aria-label="Company name" placeholder="Company name" className="h-12 border-launch-ink/15" />
-                  </div>
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    <Input required type="email" name="email" aria-label="Work email" placeholder="Work email" className="h-12 border-launch-ink/15" />
-                    <Input name="revenue" aria-label="Monthly revenue" placeholder="Monthly revenue" className="h-12 border-launch-ink/15" />
-                  </div>
-                  <Input name="website" aria-label="Website" placeholder="Website" className="h-12 border-launch-ink/15" />
-                  <Textarea required name="bottleneck" aria-label="Biggest marketing bottleneck" placeholder="What's your biggest marketing bottleneck?" className="min-h-28 border-launch-ink/15" />
-                  <Button type="submit" className="h-12 w-full rounded-full bg-launch-red font-bold uppercase text-launch-paper hover:bg-launch-red-bright">Scale My Business <ArrowRight /></Button>
-                  <p className="text-center text-xs text-launch-ink/50">Your details stay private. No spam.</p>
-                </form>
-              )}
+            <div className="overflow-hidden rounded-md bg-launch-paper">
+              <div className="flex h-10 items-center justify-center bg-launch-red text-[10px] font-bold uppercase tracking-[0.18em] text-launch-paper">
+                Book your strategy call
+              </div>
+              <iframe
+                src="https://calendly.com/launch-creative?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=f5f1e6&primary_color=f63028"
+                title="Schedule a strategy call with Launch Creative"
+                className="h-[680px] w-full"
+                frameBorder="0"
+              />
             </div>
           </div>
         </section>
