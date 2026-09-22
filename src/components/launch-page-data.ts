@@ -8,12 +8,12 @@ export const testimonials = [
     image: "cofounderslab",
   },
   {
-    name: "Ramsey Al-Ramahi",
-    role: "Ex-Apollo.io + Co-founder Rev Reply",
+    name: "Director",
+    role: "Astra Healthcare",
     headline: "They Are Relentless in Execution",
     quote:
       "What really matters is the execution. There's nobody I know who goes as fast and as hard as Alec and Dante — they are relentless.",
-    image: "ramsey",
+    image: "astrahealthcare",
   },
   {
     name: "Emmanuel Quezada",
