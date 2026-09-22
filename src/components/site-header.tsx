@@ -2,9 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-const nav: ReadonlyArray<{ to: "/launch-page"; label: string }> = [
-  { to: "/launch-page", label: "Launch Page" },
-];
+const nav: ReadonlyArray<{ to: "/"; label: string }> = [];
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -28,12 +26,12 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <Link
-            to="/contact"
+          <a
+            href="mailto:info@astraagency.co"
             className="rounded-full bg-primary px-5 py-2 text-sm font-bold text-primary-foreground uppercase transition-transform hover:scale-105"
           >
             Let's talk
-          </Link>
+          </a>
         </nav>
 
         <button
@@ -48,7 +46,7 @@ export function SiteHeader() {
 
       {open && (
         <nav className="border-t border-border bg-background px-5 pb-6 pt-3 md:hidden">
-          {[...nav, { to: "/contact", label: "Contact" } as const].map((item) => (
+          {nav.map((item) => (
             <Link
               key={item.to}
               to={item.to}

@@ -1,5 +1,3 @@
-import { Link } from "@tanstack/react-router";
-
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-background">
@@ -9,12 +7,12 @@ export function SiteFooter() {
             <h2 className="max-w-xl text-4xl sm:text-6xl">
               Ready to be <span className="text-acid">unignorable?</span>
             </h2>
-            <Link
-              to="/contact"
+            <a
+              href="mailto:info@astraagency.co"
               className="mt-7 inline-flex rounded-full bg-primary px-7 py-3 font-display text-sm uppercase text-primary-foreground transition-transform hover:scale-105"
             >
               Start a project
-            </Link>
+            </a>
           </div>
           <div className="grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
             <div className="space-y-3">
