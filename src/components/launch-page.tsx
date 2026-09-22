@@ -57,14 +57,6 @@ function SectionHeading({ eyebrow, children }: { eyebrow: string; children: Reac
 }
 
 export function LaunchPage() {
-  const [submitted, setSubmitted] = useState(false);
-
-  const submit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setSubmitted(true);
-    toast.success("Application received. The Launch team will be in touch.");
-  };
-
   return (
     <div className="launch-page min-h-screen bg-launch-ink text-launch-paper">
       <header className="absolute inset-x-0 top-0 z-20 py-7">
