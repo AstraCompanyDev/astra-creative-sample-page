@@ -10,32 +10,11 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as AboutRouteImport } from './routes/about'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as DiscoveryCallRouteImport } from './routes/discovery-call'
 import { Route as LaunchPageRouteImport } from './routes/launch-page'
-import { Route as ProcessRouteImport } from './routes/process'
-import { Route as ServicesRouteImport } from './routes/services'
-import { Route as WorkRouteImport } from './routes/work'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AboutRoute = AboutRouteImport.update({
-  id: '/about',
-  path: '/about',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DiscoveryCallRoute = DiscoveryCallRouteImport.update({
-  id: '/discovery-call',
-  path: '/discovery-call',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LaunchPageRoute = LaunchPageRouteImport.update({
@@ -43,95 +22,31 @@ const LaunchPageRoute = LaunchPageRouteImport.update({
   path: '/launch-page',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProcessRoute = ProcessRouteImport.update({
-  id: '/process',
-  path: '/process',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ServicesRoute = ServicesRouteImport.update({
-  id: '/services',
-  path: '/services',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const WorkRoute = WorkRouteImport.update({
-  id: '/work',
-  path: '/work',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
-  '/contact': typeof ContactRoute
-  '/discovery-call': typeof DiscoveryCallRoute
   '/launch-page': typeof LaunchPageRoute
-  '/process': typeof ProcessRoute
-  '/services': typeof ServicesRoute
-  '/work': typeof WorkRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
-  '/contact': typeof ContactRoute
-  '/discovery-call': typeof DiscoveryCallRoute
   '/launch-page': typeof LaunchPageRoute
-  '/process': typeof ProcessRoute
-  '/services': typeof ServicesRoute
-  '/work': typeof WorkRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
-  '/contact': typeof ContactRoute
-  '/discovery-call': typeof DiscoveryCallRoute
   '/launch-page': typeof LaunchPageRoute
-  '/process': typeof ProcessRoute
-  '/services': typeof ServicesRoute
-  '/work': typeof WorkRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths:
-    | '/'
-    | '/about'
-    | '/contact'
-    | '/discovery-call'
-    | '/launch-page'
-    | '/process'
-    | '/services'
-    | '/work'
+  fullPaths: '/' | '/launch-page'
   fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/'
-    | '/about'
-    | '/contact'
-    | '/discovery-call'
-    | '/launch-page'
-    | '/process'
-    | '/services'
-    | '/work'
-  id:
-    | '__root__'
-    | '/'
-    | '/about'
-    | '/contact'
-    | '/discovery-call'
-    | '/launch-page'
-    | '/process'
-    | '/services'
-    | '/work'
+  to: '/' | '/launch-page'
+  id: '__root__' | '/' | '/launch-page'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AboutRoute: typeof AboutRoute
-  ContactRoute: typeof ContactRoute
-  DiscoveryCallRoute: typeof DiscoveryCallRoute
   LaunchPageRoute: typeof LaunchPageRoute
-  ProcessRoute: typeof ProcessRoute
-  ServicesRoute: typeof ServicesRoute
-  WorkRoute: typeof WorkRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -143,27 +58,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/about': {
-      id: '/about'
-      path: '/about'
-      fullPath: '/about'
-      preLoaderRoute: typeof AboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/discovery-call': {
-      id: '/discovery-call'
-      path: '/discovery-call'
-      fullPath: '/discovery-call'
-      preLoaderRoute: typeof DiscoveryCallRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/launch-page': {
       id: '/launch-page'
       path: '/launch-page'
@@ -171,39 +65,12 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LaunchPageRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/process': {
-      id: '/process'
-      path: '/process'
-      fullPath: '/process'
-      preLoaderRoute: typeof ProcessRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/services': {
-      id: '/services'
-      path: '/services'
-      fullPath: '/services'
-      preLoaderRoute: typeof ServicesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/work': {
-      id: '/work'
-      path: '/work'
-      fullPath: '/work'
-      preLoaderRoute: typeof WorkRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AboutRoute: AboutRoute,
-  ContactRoute: ContactRoute,
-  DiscoveryCallRoute: DiscoveryCallRoute,
   LaunchPageRoute: LaunchPageRoute,
-  ProcessRoute: ProcessRoute,
-  ServicesRoute: ServicesRoute,
-  WorkRoute: WorkRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
