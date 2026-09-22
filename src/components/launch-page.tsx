@@ -153,16 +153,11 @@ export function LaunchPage() {
                 {["A focused growth diagnosis", "A strategy call with the team", "Clear next steps for your acquisition system"].map((item) => <li key={item} className="flex gap-3"><Check className="mt-0.5 size-4 text-launch-gold" />{item}</li>)}
               </ul>
             </div>
-            <div className="overflow-hidden rounded-md bg-launch-paper">
+            <div className="overflow-hidden rounded-md border border-launch-paper/10 bg-launch-panel">
               <div className="flex h-10 items-center justify-center bg-launch-red text-[10px] font-bold uppercase tracking-[0.18em] text-launch-paper">
                 Book your strategy call
               </div>
-              <iframe
-                src="https://calendly.com/launch-creative?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=f5f1e6&primary_color=f63028"
-                title="Schedule a strategy call with Launch Creative"
-                className="h-[680px] w-full"
-                frameBorder="0"
-              />
+              <CalendlyEmbed />
             </div>
           </div>
         </section>
