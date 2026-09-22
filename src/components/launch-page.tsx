@@ -29,7 +29,7 @@ const images = {
   ramsey: ramseyAsset.url,
   jerrid: jerridAsset.url,
   emmanuel: emmanuelAsset.url,
-  cofounderslab: cofounderslabLogoAsset.url,
+  cofounderslab: cofounderslabMarkAsset.url,
   nico: nicoAsset.url,
   trey: treyAsset.url,
   dante: danteAsset.url,
