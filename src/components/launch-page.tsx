@@ -97,9 +97,10 @@ export function LaunchPage() {
               </div>
               <div className="aspect-video bg-launch-panel">
                 <iframe
-                  src="https://fast.wistia.net/embed/iframe/jjd95u0eal?seo=false&videoFoam=true&playerColor=f63028"
+                  src="https://www.youtube.com/embed/pMOWREkQ5BI?rel=0&modestbranding=1"
                   title="Launch client acquisition system"
-                  allow="autoplay; fullscreen"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
                   className="h-full w-full"
                 />
               </div>
