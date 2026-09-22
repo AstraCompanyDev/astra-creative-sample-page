@@ -63,7 +63,7 @@ function CalendlyEmbed() {
     <div
       ref={ref}
       className="calendly-inline-widget"
-      data-url="https://calendly.com/launch-creative?hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=f63028"
+      data-url="https://calendly.com/launch-creative/30min?hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=f63028"
       style={{ minWidth: "320px", height: "760px", backgroundColor: "#ffffff" }}
     />
   );
