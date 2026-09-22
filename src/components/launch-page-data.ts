@@ -21,7 +21,7 @@ export const testimonials = [
     headline: "Helped Me Sell Out My Event",
     quote:
       "Launch goes above and beyond. Responsive, solution-oriented, and they helped me sell out my event, FlowSummit 2026.",
-    image: "jerrid",
+    image: "emmanuel",
   },
   {
     name: "Nico Van Slyke",

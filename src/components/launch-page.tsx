@@ -20,11 +20,13 @@ import alecAsset from "@/assets/launch/alec.jpg.asset.json";
 import spencerAsset from "@/assets/launch/spencer.jpg.asset.json";
 import connorAsset from "@/assets/launch/connor.png.asset.json";
 import launchLogoAsset from "@/assets/launch/launch-creative-logo.png.asset.json";
+import emmanuelAsset from "@/assets/launch/emmanuel-quezada.png.asset.json";
 
 const images = {
   rene: reneAsset.url,
   ramsey: ramseyAsset.url,
   jerrid: jerridAsset.url,
+  emmanuel: emmanuelAsset.url,
   nico: nicoAsset.url,
   trey: treyAsset.url,
   dante: danteAsset.url,
