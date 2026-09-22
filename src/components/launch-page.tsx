@@ -77,7 +77,7 @@ function CalendlyEmbed() {
       ref={ref}
       className="calendly-inline-widget"
       data-url="https://calendly.com/launch-creative?hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=f63028"
-      style={{ minWidth: "320px", height: "720px" }}
+      style={{ minWidth: "320px", height: "760px", backgroundColor: "#ffffff" }}
     />
   );
 }
