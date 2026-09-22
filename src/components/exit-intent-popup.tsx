@@ -13,8 +13,9 @@ export function ExitIntentPopup() {
   const [sent, setSent] = useState(false);
 
   useEffect(() => {
+    // Muted for now — the Launch funnel page is the whole site.
+    return;
     if (typeof window === "undefined") return;
-    if (window.location.pathname === "/launch-page") return;
     if (sessionStorage.getItem(STORAGE_KEY)) return;
 
     let armed = false;
