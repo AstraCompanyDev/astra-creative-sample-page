@@ -115,9 +115,9 @@ export function LaunchPage() {
                 {[...partnerLogos, ...partnerLogos].map((logo, index) => (
                   <div
                     key={`${logo.alt}-${index}`}
-                    className="flex h-44 w-80 shrink-0 items-center justify-center rounded-md border border-launch-paper/10 bg-launch-panel px-6 sm:w-96"
+                    className="flex h-56 w-96 shrink-0 items-center justify-center rounded-md border border-launch-paper/10 bg-launch-panel px-8 sm:w-[30rem]"
                   >
-                    <img src={logo.src} alt={index < partnerLogos.length ? logo.alt : ""} className="max-h-28 w-full object-contain" />
+                    <img src={logo.src} alt={index < partnerLogos.length ? logo.alt : ""} className="max-h-36 w-full object-contain" />
                   </div>
                 ))}
               </div>
