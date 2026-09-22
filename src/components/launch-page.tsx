@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { ArrowRight, Check, ChevronDown, Play, Star } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
