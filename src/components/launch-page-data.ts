@@ -5,7 +5,7 @@ export const testimonials = [
     headline: "800,000 users",
     quote:
       "Launch Creative helped us scale the platform to over 800,000 users — sharpening our messaging, funnels, and content until growth became predictable.",
-    image: "rene",
+    image: "cofounderslab",
   },
   {
     name: "Ramsey Al-Ramahi",
