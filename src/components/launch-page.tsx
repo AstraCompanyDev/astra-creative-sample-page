@@ -1,10 +1,6 @@
-import { useState } from "react";
 import { ArrowRight, Check, ChevronDown, Play, Star } from "lucide-react";
-import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { faqs, systemTracks, team, testimonials, values } from "@/components/launch-page-data";
 
