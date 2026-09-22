@@ -21,12 +21,14 @@ import spencerAsset from "@/assets/launch/spencer.jpg.asset.json";
 import connorAsset from "@/assets/launch/connor.png.asset.json";
 import launchLogoAsset from "@/assets/launch/launch-creative-logo.png.asset.json";
 import emmanuelAsset from "@/assets/launch/emmanuel-quezada.png.asset.json";
+import cofounderslabLogoAsset from "@/assets/cofounderslab-logo.png.asset.json";
 
 const images = {
   rene: reneAsset.url,
   ramsey: ramseyAsset.url,
   jerrid: jerridAsset.url,
   emmanuel: emmanuelAsset.url,
+  cofounderslab: cofounderslabLogoAsset.url,
   nico: nicoAsset.url,
   trey: treyAsset.url,
   dante: danteAsset.url,
@@ -176,7 +178,7 @@ export function LaunchPage() {
                   <h3 className="mt-5 font-launch text-2xl leading-tight">“{item.headline}”</h3>
                   <p className="mt-4 text-sm leading-6 text-launch-paper/65">“{item.quote}”</p>
                   <div className="mt-6 flex items-center gap-3 border-t border-launch-paper/10 pt-5">
-                    <img src={images[item.image as keyof typeof images]} alt={item.name} className="size-11 rounded-full object-cover" loading="lazy" />
+                    <img src={images[item.image as keyof typeof images]} alt={item.name} className={`size-11 rounded-full ${item.image === "cofounderslab" ? "bg-black object-contain p-1.5" : "object-cover"}`} loading="lazy" />
                     <div><p className="text-sm font-bold">{item.name}</p><p className="text-xs text-launch-paper/50">{item.role}</p></div>
                   </div>
                 </article>
