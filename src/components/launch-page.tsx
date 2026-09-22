@@ -48,6 +48,35 @@ function ApplyButton({ children = "Book A Call" }: { children?: string }) {
   );
 }
 
+function CalendlyEmbed() {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const id = "calendly-widget-js";
+    const w = window as unknown as { Calendly?: { initInlineWidget: (opts: { url: string; parentElement: HTMLElement }) => void } };
+    const init = () => {
+      if (w.Calendly && ref.current) {
+        w.Calendly.initInlineWidget({
+          url: "https://calendly.com/launch-creative?hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=f63028",
+          parentElement: ref.current,
+        });
+      } else {
+        setTimeout(init, 250);
+      }
+    };
+    if (!document.getElementById(id)) {
+      const script = document.createElement("script");
+      script.id = id;
+      script.src = "https://assets.calendly.com/assets/external/widget.js";
+      script.async = true;
+      script.onload = init;
+      document.body.appendChild(script);
+    } else {
+      init();
+    }
+  }, []);
+  return <div ref={ref} className="calendly-inline-widget" style={{ minWidth: "320px", height: "720px" }} />;
+}
+
 function SectionHeading({ eyebrow, children }: { eyebrow: string; children: React.ReactNode }) {
   return (
     <div className="mx-auto max-w-4xl text-center">
