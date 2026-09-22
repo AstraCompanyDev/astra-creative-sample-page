@@ -31,6 +31,7 @@ const images = {
   jerrid: jerridAsset.url,
   emmanuel: emmanuelAsset.url,
   cofounderslab: cofounderslabMarkAsset.url,
+  astrahealthcare: astraHealthcareMarkAsset.url,
   nico: nicoAsset.url,
   trey: treyAsset.url,
   dante: danteAsset.url,
