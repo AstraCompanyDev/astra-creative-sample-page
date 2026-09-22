@@ -52,25 +52,12 @@ function CalendlyEmbed() {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const id = "calendly-widget-js";
-    const w = window as unknown as { Calendly?: { initInlineWidget: (opts: { url: string; parentElement: HTMLElement }) => void } };
-    const init = () => {
-      if (w.Calendly && ref.current) {
-        w.Calendly.initInlineWidget({
-          url: "https://calendly.com/launch-creative?hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=f63028",
-          parentElement: ref.current,
-        });
-      } else {
-        setTimeout(init, 300);
-      }
-    };
-    if (!document.getElementById(id)) {
-      const script = document.createElement("script");
-      script.id = id;
-      script.src = "https://assets.calendly.com/assets/external/widget.js";
-      script.async = true;
-      document.body.appendChild(script);
-    }
-    init();
+    if (document.getElementById(id)) return;
+    const script = document.createElement("script");
+    script.id = id;
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
   }, []);
   return (
     <div
