@@ -103,12 +103,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "icon", type: "image/png", href: "/favicon.png" },
     ],
-    scripts: [
-      {
-        src: "https://www.googletagmanager.com/gtm.js?id=GTM-PCJND3VG",
-        async: true,
-      },
-    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
