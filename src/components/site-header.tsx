@@ -5,11 +5,6 @@ import { Button } from "@/components/ui/button";
 
 const nav = [
   { to: "/agency", label: "Agency" },
-  { to: "/services", label: "Services" },
-  { to: "/work", label: "Work" },
-  { to: "/process", label: "Process" },
-  { to: "/about", label: "About" },
-  { to: "/discovery-call", label: "Free call" },
 ] as const;
 
 export function SiteHeader() {
@@ -34,9 +29,6 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <Button asChild className="rounded-full px-5 font-bold uppercase">
-            <Link to="/contact">Let's talk</Link>
-          </Button>
         </nav>
 
         <Button
@@ -63,7 +55,6 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <Link to="/contact" onClick={() => setOpen(false)} className="block py-3 font-display text-2xl uppercase text-primary">Let's talk</Link>
         </nav>
       )}
     </header>
