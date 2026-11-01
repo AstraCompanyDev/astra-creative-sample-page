@@ -1,5 +1,5 @@
 // Original Astra Creative homepage — preserved for later reuse.
-// Currently muted: the Launch page is the main page of the site.
+// Available at /agency; the Launch page remains the main homepage.
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 
@@ -80,18 +80,18 @@ export function HomePage() {
                 actually sell — not campaigns that just look nice in a deck.
               </p>
               <div className="flex flex-wrap gap-3">
-                <a
-                  href="mailto:info@astraagency.co"
+                <Link
+                  to="/contact"
                   className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 font-display text-sm uppercase text-primary-foreground transition-transform hover:scale-105"
                 >
                   Start a project <ArrowUpRight className="size-4" />
-                </a>
-                <a
-                  href="#work"
+                </Link>
+                <Link
+                  to="/contact"
                   className="inline-flex items-center gap-2 rounded-full border border-border px-7 py-3.5 font-display text-sm uppercase transition-colors hover:border-primary hover:text-primary"
                 >
                   See the work
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -144,12 +144,12 @@ export function HomePage() {
                   <span className="text-acid">buy attention back</span>
                 </h2>
               </div>
-              <a
-                href="mailto:info@astraagency.co"
+              <Link
+                to="/contact"
                 className="inline-flex items-center gap-2 font-display text-sm uppercase text-primary hover:underline"
               >
                 Talk to us <ArrowUpRight className="size-4" />
-              </a>
+              </Link>
             </div>
 
             <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
