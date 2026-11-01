@@ -1,8 +1,16 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-const nav: ReadonlyArray<{ to: "/"; label: string }> = [];
+const nav = [
+  { to: "/agency", label: "Agency" },
+  { to: "/services", label: "Services" },
+  { to: "/work", label: "Work" },
+  { to: "/process", label: "Process" },
+  { to: "/about", label: "About" },
+  { to: "/discovery-call", label: "Free call" },
+] as const;
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -15,7 +23,7 @@ export function SiteHeader() {
           <span className="font-display text-lg tracking-tight uppercase">Astra Creative</span>
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-5 lg:flex">
           {nav.map((item) => (
             <Link
               key={item.to}
@@ -26,26 +34,25 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <a
-            href="mailto:info@astraagency.co"
-            className="rounded-full bg-primary px-5 py-2 text-sm font-bold text-primary-foreground uppercase transition-transform hover:scale-105"
-          >
-            Let's talk
-          </a>
+          <Button asChild className="rounded-full px-5 font-bold uppercase">
+            <Link to="/contact">Let's talk</Link>
+          </Button>
         </nav>
 
-        <button
+        <Button
           type="button"
+          variant="ghost"
+          size="icon"
           aria-label={open ? "Close menu" : "Open menu"}
-          className="md:hidden"
+          className="lg:hidden"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X className="size-6" /> : <Menu className="size-6" />}
-        </button>
+        </Button>
       </div>
 
       {open && (
-        <nav className="border-t border-border bg-background px-5 pb-6 pt-3 md:hidden">
+        <nav className="border-t border-border bg-background px-5 pb-6 pt-3 lg:hidden">
           {nav.map((item) => (
             <Link
               key={item.to}
@@ -56,6 +63,7 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
+          <Link to="/contact" onClick={() => setOpen(false)} className="block py-3 font-display text-2xl uppercase text-primary">Let's talk</Link>
         </nav>
       )}
     </header>
