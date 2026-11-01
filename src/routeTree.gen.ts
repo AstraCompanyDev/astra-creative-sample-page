@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as AgencyRouteImport } from './routes/agency'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as DiscoveryCallRouteImport } from './routes/discovery-call'
 import { Route as LaunchPageRouteImport } from './routes/launch-page'
@@ -26,6 +27,11 @@ const IndexRoute = IndexRouteImport.update({
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AgencyRoute = AgencyRouteImport.update({
+  id: '/agency',
+  path: '/agency',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -62,6 +68,7 @@ const WorkRoute = WorkRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/agency': typeof AgencyRoute
   '/contact': typeof ContactRoute
   '/discovery-call': typeof DiscoveryCallRoute
   '/launch-page': typeof LaunchPageRoute
@@ -72,6 +79,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/agency': typeof AgencyRoute
   '/contact': typeof ContactRoute
   '/discovery-call': typeof DiscoveryCallRoute
   '/launch-page': typeof LaunchPageRoute
@@ -83,6 +91,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/agency': typeof AgencyRoute
   '/contact': typeof ContactRoute
   '/discovery-call': typeof DiscoveryCallRoute
   '/launch-page': typeof LaunchPageRoute
@@ -95,6 +104,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/agency'
     | '/contact'
     | '/discovery-call'
     | '/launch-page'
@@ -105,6 +115,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/agency'
     | '/contact'
     | '/discovery-call'
     | '/launch-page'
@@ -115,6 +126,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/agency'
     | '/contact'
     | '/discovery-call'
     | '/launch-page'
@@ -126,6 +138,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  AgencyRoute: typeof AgencyRoute
   ContactRoute: typeof ContactRoute
   DiscoveryCallRoute: typeof DiscoveryCallRoute
   LaunchPageRoute: typeof LaunchPageRoute
@@ -148,6 +161,13 @@ declare module '@tanstack/react-router' {
       path: '/about'
       fullPath: '/about'
       preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/agency': {
+      id: '/agency'
+      path: '/agency'
+      fullPath: '/agency'
+      preLoaderRoute: typeof AgencyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -198,6 +218,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  AgencyRoute: AgencyRoute,
   ContactRoute: ContactRoute,
   DiscoveryCallRoute: DiscoveryCallRoute,
   LaunchPageRoute: LaunchPageRoute,
