@@ -81,13 +81,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Astra Creative — Creator-Led Social & Brand Agency" },
+      { title: "StartNow Creative — Creator-Led Social & Brand Agency" },
       {
         name: "description",
         content:
-          "Astra Creative is a creator-led social agency building attention engines for ambitious brands.",
+          "StartNow Creative is a creator-led social agency building attention engines for ambitious brands.",
       },
-      { name: "author", content: "Astra Creative Co." },
+      { name: "author", content: "StartNow Creative" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

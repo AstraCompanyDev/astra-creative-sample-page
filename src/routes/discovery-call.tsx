@@ -16,13 +16,13 @@ import {
 export const Route = createFileRoute("/discovery-call")({
   head: () => ({
     meta: [
-      { title: "Book Your FREE Discovery Call — Astra Creative" },
+      { title: "Book Your FREE Discovery Call — StartNow Creative" },
       {
         name: "description",
         content:
-          "Claim a free 30-minute discovery call with Astra Creative. We'll map your fastest path to attention: UGC, paid social and brand strategy — no pitch, no cost.",
+          "Claim a free 30-minute discovery call with StartNow Creative. We'll map your fastest path to attention: UGC, paid social and brand strategy — no pitch, no cost.",
       },
-      { property: "og:title", content: "Book Your FREE Discovery Call — Astra Creative" },
+      { property: "og:title", content: "Book Your FREE Discovery Call — StartNow Creative" },
       {
         property: "og:description",
         content:
@@ -93,7 +93,7 @@ function DiscoveryCall() {
           <span className="flex items-center gap-2">
             <span className="h-3 w-3 rounded-full bg-acid" />
             <span className="font-display text-lg uppercase tracking-tight">
-              Astra Creative
+              StartNow Creative
             </span>
           </span>
           <span className="hidden font-display text-xs uppercase tracking-widest text-muted-foreground sm:block">
@@ -301,9 +301,9 @@ function DiscoveryCall() {
       {/* Minimal funnel footer */}
       <footer className="border-t border-border py-8">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-2 px-5 text-center text-xs text-muted-foreground sm:flex-row sm:justify-between sm:px-8">
-          <p>© {new Date().getFullYear()} Astra Creative Co. All rights reserved.</p>
-          <a href="mailto:info@astraagency.co" className="hover:text-primary">
-            info@astraagency.co
+          <p>© {new Date().getFullYear()} StartNow Creative All rights reserved.</p>
+          <a href="mailto:info@startnowcreative.com" className="hover:text-primary">
+            info@startnowcreative.com
           </a>
         </div>
       </footer>
