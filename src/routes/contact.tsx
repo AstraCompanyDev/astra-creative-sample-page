@@ -10,11 +10,11 @@ export const Route = createFileRoute("/contact")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Contact — Start a Project | Astra Creative" },
+      { title: "Contact — Start a Project | StartNow Creative" },
       {
         name: "description",
         content:
-          "Tell Astra Creative about your brand and goals. New business enquiries answered within one business day from our New York studio.",
+          "Tell StartNow Creative about your brand and goals. New business enquiries answered within one business day from our New York studio.",
       },
       { property: "og:title", content: "Contact — Start a Project" },
       {
@@ -143,10 +143,10 @@ function ContactPage() {
               <div>
                 <h2 className="text-2xl">Get in touch</h2>
                 <a
-                  href="mailto:info@astraagency.co"
+                  href="mailto:info@startnowcreative.com"
                   className="mt-3 block text-primary hover:underline"
                 >
-                  info@astraagency.co
+                  info@startnowcreative.com
                 </a>
               </div>
               <div>

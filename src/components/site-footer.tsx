@@ -35,14 +35,14 @@ export function SiteFooter() {
             </div>
           </div>
           <div className="mt-2 text-sm">
-            <a href="mailto:info@astraagency.co" className="hover:text-primary">
-              info@astraagency.co
+            <a href="mailto:info@startnowcreative.com" className="hover:text-primary">
+              info@startnowcreative.com
             </a>
           </div>
         </div>
 
         <div className="mt-14 flex flex-col gap-2 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:justify-between">
-          <p>© {new Date().getFullYear()} Astra Creative Co. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} StartNow Creative All rights reserved.</p>
           <p>Built for brands that refuse to blend in.</p>
         </div>
       </div>

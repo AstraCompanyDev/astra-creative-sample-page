@@ -9,11 +9,11 @@ export const Route = createFileRoute("/process")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Process — From Brief to First Cut in 72 Hours | Astra Creative" },
+      { title: "Process — From Brief to First Cut in 72 Hours | StartNow Creative" },
       {
         name: "description",
         content:
-          "How Astra Creative works: immerse, frame, produce, amplify and compound — a four-phase creator-led process built for speed and measurable results.",
+          "How StartNow Creative works: immerse, frame, produce, amplify and compound — a four-phase creator-led process built for speed and measurable results.",
       },
       { property: "og:title", content: "Process — From Brief to First Cut in 72 Hours" },
       {

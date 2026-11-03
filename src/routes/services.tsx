@@ -9,11 +9,11 @@ export const Route = createFileRoute("/services")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Services — UGC, Paid Social & Brand Strategy | Astra Creative" },
+      { title: "Services — UGC, Paid Social & Brand Strategy | StartNow Creative" },
       {
         name: "description",
         content:
-          "Brand strategy, UGC production at scale, social management, paid social, content production and influencer partnerships from Astra Creative.",
+          "Brand strategy, UGC production at scale, social management, paid social, content production and influencer partnerships from StartNow Creative.",
       },
       { property: "og:title", content: "Services — UGC, Paid Social & Brand Strategy" },
       {

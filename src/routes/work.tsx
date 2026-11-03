@@ -12,11 +12,11 @@ export const Route = createFileRoute("/work")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Work — Creator Campaigns & Brand Launches | Astra Creative" },
+      { title: "Work — Creator Campaigns & Brand Launches | StartNow Creative" },
       {
         name: "description",
         content:
-          "Case studies from Astra Creative: creator-led launches, B2B social systems and healthcare brand builds with measurable revenue impact.",
+          "Case studies from StartNow Creative: creator-led launches, B2B social systems and healthcare brand builds with measurable revenue impact.",
       },
       { property: "og:title", content: "Work — Creator Campaigns & Brand Launches" },
       {

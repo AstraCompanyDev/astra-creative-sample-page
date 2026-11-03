@@ -261,7 +261,7 @@ export function LaunchPage() {
       <footer className="border-t border-launch-paper/10 px-5 py-10 text-center text-xs text-launch-paper/40">
         <div className="mx-auto max-w-5xl">
           <p>Results are not typical or guaranteed. Every business and market is different, and your results depend on many factors including your offer, execution and investment.</p>
-          <div className="mt-7 flex flex-col items-center justify-between gap-3 border-t border-launch-paper/10 pt-7 sm:flex-row"><p>© 2026 Launch Marketing — All Rights Reserved</p><p>Questions? <a href="mailto:info@astraagency.co" className="text-launch-paper/70 hover:text-launch-gold">info@astraagency.co</a></p></div>
+          <div className="mt-7 flex flex-col items-center justify-between gap-3 border-t border-launch-paper/10 pt-7 sm:flex-row"><p>© 2026 Launch Marketing — All Rights Reserved</p><p>Questions? <a href="mailto:info@startnowcreative.com" className="text-launch-paper/70 hover:text-launch-gold">info@startnowcreative.com</a></p></div>
         </div>
       </footer>
     </div>

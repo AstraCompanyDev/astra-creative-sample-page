@@ -1,4 +1,4 @@
-// Original Astra Creative homepage — preserved for later reuse.
+// Original StartNow Creative homepage — preserved for later reuse.
 // Available at /agency; the Launch page remains the main homepage.
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
@@ -75,7 +75,7 @@ export function HomePage() {
             </h1>
             <div className="mt-10 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
               <p className="max-w-xl text-base text-muted-foreground sm:text-lg">
-                Astra Creative is a full-stack social and content studio. We pair sharp brand
+                StartNow Creative is a full-stack social and content studio. We pair sharp brand
                 strategy with a 400-creator UGC network to build attention engines that
                 actually sell — not campaigns that just look nice in a deck.
               </p>
