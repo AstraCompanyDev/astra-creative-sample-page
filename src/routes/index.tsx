@@ -1,27 +1,25 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import { LaunchPage } from "@/components/launch-page";
+import { HomePage } from "@/components/home-page";
 
+// The agency homepage is now the main homepage — /agency redirects here.
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Launch: Scale My Business" },
+      { title: "StartNow Creative — Creator-Led Social & Brand Agency" },
       {
         name: "description",
-        content: "Discover the Launch client acquisition system for turning underperforming marketing into a predictable pipeline of qualified clients.",
+        content:
+          "StartNow Creative is a creator-led social agency building attention engines for ambitious brands.",
       },
-      { property: "og:title", content: "Launch: Scale My Business" },
+      { property: "og:title", content: "StartNow Creative — Creator-Led Social & Brand Agency" },
       {
         property: "og:description",
-        content: "A proven growth operating system for established business owners ready to scale.",
+        content: "Creator-led strategy, content and campaigns for ambitious brands.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://astra-creative-sample-page.lovable.app/" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [
-      { rel: "canonical", href: "https://astra-creative-sample-page.lovable.app/" },
-    ],
   }),
-  component: LaunchPage,
+  component: HomePage,
 });
