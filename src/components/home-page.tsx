@@ -1,5 +1,4 @@
-// Original StartNow Creative homepage — preserved for later reuse.
-// Available at /agency; the Launch page remains the main homepage.
+// Original StartNow Creative homepage — the site's main homepage at "/".
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 
